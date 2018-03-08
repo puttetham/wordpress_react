@@ -18,17 +18,6 @@
   right: 2rem;
 }
 
-.line.close:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    top: 50%;
-    margin-top: -15px;
-    left: 0;
-    cursor: pointer;
-}
-
 .line.close:first-child {
   transform: rotate(45deg);
   transform-origin: 50% 50%;

@@ -11,6 +11,17 @@
   width: 30px;
 }
 
+.line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  cursor: pointer;
+}
+
 .line:first-child {
   margin-bottom: 5px;
 }

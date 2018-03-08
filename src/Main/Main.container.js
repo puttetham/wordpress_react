@@ -6,23 +6,22 @@ class Main extends Component {
   constructor() {
     super();
     this.state = {
-      movies: [],
+      images: [],
       overlayOpen: false,
     }
   }
   
 componentDidMount() {
-    let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/movies?_embed/";
+    let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
     fetch(dataURL)
       .then(res => res.json())
       
       .then(res => {
         console.log(res);
         this.setState({
-          movies: res
+          images: res
         })
       })
-      
   }
 
 render() {
@@ -31,29 +30,28 @@ render() {
     this.setState({
       overlayOpen: true,
     })
+    document.body.classList.add('no-scroll');
   };
 
   const menuClose = () => {
     this.setState({
       overlayOpen: false,
     })
+    document.body.classList.remove('no-scroll');
   };
 
-  let movies = this.state.movies.map((movie, index) => {
+  let images = this.state.images.map((image, index) => {
     return <div key={index}>
    
-    <p><strong>Title:</strong> {movie.title.rendered}</p>
-    {/* <p><strong>Release Year:</strong> {movie.acf.release_year}</p>
-    <p><strong>Rating:</strong> {movie.acf.rating}</p>
-    <img src={movie.acf.image} alt="" />
-    <div><strong>Description:</strong><div dangerouslySetInnerHTML={ {__html: movie.acf.description} } /></div> */}
+    <img src={image.acf.image} alt="" />
+    
     </div>
   });
 return (
       <div className="main">
-        <HeaderComponent menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
+        <HeaderComponent images={this.state.images} menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
         <h2 >Movies</h2>
-        {movies}
+        {images}
       </div>
     )
   }
