@@ -15,7 +15,6 @@ componentDidMount() {
     let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
     fetch(dataURL)
       .then(res => res.json())
-      
       .then(res => {
         console.log(res);
         this.setState({
@@ -49,7 +48,7 @@ render() {
   });
 return (
       <div className="main">
-        <HeaderComponent images={this.state.images} menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
+        <HeaderComponent images={this.state.images[0]} menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
         <h2 >Movies</h2>
         {images}
       </div>

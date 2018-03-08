@@ -8,7 +8,7 @@ interface Props {
   menuClick: Function,
   menuClose: Function,
   overlayOpen: boolean,
-  images: Array<Object>,
+  images: Object,
 }
 
 const Header = (props: Props) => {
@@ -21,9 +21,13 @@ const Header = (props: Props) => {
     
   //   </div>
   // });
+
+  const style = {
+    backgroundImage: props.images ?  `url(${props.images.acf.image})` : null,
+  }
   
   return(
-  <div className="header"> 
+  <div className="header" style={style}> 
     {/* {renderImage} */}
     <MenuComponent menuClick={props.menuClick} />
     <OverlayComponent overlayOpen={props.overlayOpen} menuClose={props.menuClose} />
