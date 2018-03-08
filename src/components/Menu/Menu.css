@@ -1,0 +1,16 @@
+.menu {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.line {
+  background: white;
+  height: 2px;
+  width: 30px;
+}
+
+.line:first-child {
+  margin-bottom: 5px;
+}

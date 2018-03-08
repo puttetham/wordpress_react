@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
+import HeaderComponent from '../components/Header/Header.component';
 
 class Main extends Component {
   constructor() {
     super();
     this.state = {
-      movies: []
+      movies: [],
+      overlayOpen: false,
     }
   }
+  
 componentDidMount() {
     let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/movies?_embed/";
     fetch(dataURL)
@@ -21,7 +24,16 @@ componentDidMount() {
       })
       
   }
+
 render() {
+
+  const menuClick = () => {
+    this.setState({
+      overlayOpen: true,
+    })
+    console.log('hello');
+  };
+
   let movies = this.state.movies.map((movie, index) => {
     return <div key={index}>
    
@@ -34,7 +46,8 @@ render() {
   });
 return (
       <div className="main">
-        <h2>Movies</h2>
+        <HeaderComponent menuClick={menuClick} overlayOpen={this.state.overlayOpen} />
+        <h2 >Movies</h2>
         {movies}
       </div>
     )
