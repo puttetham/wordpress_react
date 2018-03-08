@@ -33,7 +33,7 @@ render() {
     </div>
   });
 return (
-      <div>
+      <div className="main">
         <h2>Movies</h2>
         {movies}
       </div>
