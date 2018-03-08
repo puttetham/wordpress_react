@@ -31,7 +31,12 @@ render() {
     this.setState({
       overlayOpen: true,
     })
-    console.log('hello');
+  };
+
+  const menuClose = () => {
+    this.setState({
+      overlayOpen: false,
+    })
   };
 
   let movies = this.state.movies.map((movie, index) => {
@@ -46,7 +51,7 @@ render() {
   });
 return (
       <div className="main">
-        <HeaderComponent menuClick={menuClick} overlayOpen={this.state.overlayOpen} />
+        <HeaderComponent menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
         <h2 >Movies</h2>
         {movies}
       </div>

@@ -2,6 +2,10 @@ import React from 'react';
 
 import './Menu.css'
 
+interface Props {
+  menuClick: Function,
+}
+
 const Menu = (props: Props) => (
   <div className="menu" onClick={props.menuClick}> 
     <div className="line" />
