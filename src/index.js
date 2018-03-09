@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
 import './styles/Theme.css';
+import './styles/Grid.css';
 
 ReactDOM.render(
 <BrowserRouter>
