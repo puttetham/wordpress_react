@@ -9,6 +9,7 @@ interface Props {
   menuClose: Function,
   overlayOpen: boolean,
   images: Object,
+  heroImage: string,
 }
 
 interface State {
@@ -44,12 +45,11 @@ render() {
   }
 
   const altStyle = {
-    backgroundImage: 'url(https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kRs.jpg)',
+    backgroundImage: `url(${this.props.heroImage})`,
     backgroundSize: 'cover',
   }
-
 return (
-  <div className="header" style={this.props.images ? style : altStyle}> 
+  <div className="header" style={this.props.images ? altStyle : altStyle}> 
     <MenuComponent menuClick={menuClick} />
     <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>

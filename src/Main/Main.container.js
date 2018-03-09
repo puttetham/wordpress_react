@@ -24,10 +24,10 @@ componentDidMount() {
   }
 
 render() {
-
+  const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
       <div className="main">
-        <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen} />
+        <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen} heroImage={heroImage} />
         <FooterComponent />
       </div>
     )

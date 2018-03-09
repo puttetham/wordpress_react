@@ -24,10 +24,10 @@ componentDidMount() {
 }
 
 render() {
-
+const heroImage = 'https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kRs.jpg';
 return (
       <div className="bookings">
-        <HeaderComponent />
+        <HeaderComponent heroImage={heroImage} />
       </div>
     )
   }

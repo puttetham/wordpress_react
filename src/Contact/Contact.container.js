@@ -25,9 +25,11 @@ componentDidMount() {
 
 render() {
 
+const heroImage = 'http://images.wookmark.com/461981_wookmark.jpg';
+
 return (
       <div className="contact">
-        <HeaderComponent />
+        <HeaderComponent heroImage={heroImage}/>
       </div>
     )
   }

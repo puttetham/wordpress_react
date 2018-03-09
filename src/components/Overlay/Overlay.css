@@ -1,9 +1,12 @@
 .overlay {
   height: 100vh;
   width: 100vw;
-  background: #8c3861;
+  background: #213659;
   transform: translateY(-100%);
   transition: transform .8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
@@ -27,4 +30,11 @@
   transform: rotate(-45deg);
   transform-origin: 50% 50%;
     
+}
+
+.link-div > a {
+  margin: 0;
+  text-decoration: none;
+  
+  color: #FFF;
 }
