@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import HeaderComponent from '../components/Header/Header.component';
+import FooterComponent from '../components/Footer/Footer.component';
 
 class Main extends Component {
   constructor() {
@@ -39,18 +40,10 @@ render() {
     document.body.classList.remove('no-scroll');
   };
 
-  let images = this.state.images.map((image, index) => {
-    return <div key={index}>
-   
-    <img src={image.acf.image} alt="" />
-    
-    </div>
-  });
 return (
       <div className="main">
         <HeaderComponent images={this.state.images[0]} menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
-        <h2 >Movies</h2>
-        {images}
+        <FooterComponent />
       </div>
     )
   }

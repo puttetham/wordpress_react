@@ -14,21 +14,18 @@ interface Props {
 const Header = (props: Props) => {
   console.log(props.images, 'checking props');
   
-  // const renderImage = props.images.map((image, index) => {
-  //   return <div key={index}>
-   
-  //   <img src={image.acf.image} alt="" />
-    
-  //   </div>
-  // });
-
   const style = {
     backgroundImage: props.images ?  `url(${props.images.acf.image})` : null,
+    backgroundSize: 'cover',
   }
   
+  const altStyle = {
+    backgroundImage: 'url(https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kRs.jpg)',
+    backgroundSize: 'cover',
+  }
+
   return(
-  <div className="header" style={style}> 
-    {/* {renderImage} */}
+  <div className="header" style={props.images ? style : altStyle}> 
     <MenuComponent menuClick={props.menuClick} />
     <OverlayComponent overlayOpen={props.overlayOpen} menuClose={props.menuClose} />
   </div>
