@@ -24,14 +24,11 @@ class Header extends Component {
   }
   
 render() {
-
-  console.log(this.props.images, 'checking props');
   const menuClick = () => {
     this.setState({
       overlayOpen: true,
     })
     document.body.classList.add('no-scroll');
-    console.log('menuclick');
   };
 
   const menuClose = () => {

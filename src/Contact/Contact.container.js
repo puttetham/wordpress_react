@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import HeaderComponent from '../components/Header/Header.component';
-import './Bookings.css';
+import './Contact.css';
 
-class Bookings extends Component {
+class Contact extends Component {
   constructor() {
     super();
     this.state = {
@@ -26,10 +26,10 @@ componentDidMount() {
 render() {
 
 return (
-      <div className="bookings">
+      <div className="contact">
         <HeaderComponent />
       </div>
     )
   }
 }
-export default Bookings;
+export default Contact;
