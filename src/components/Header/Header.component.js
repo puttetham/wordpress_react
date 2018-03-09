@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
@@ -11,24 +11,52 @@ interface Props {
   images: Object,
 }
 
-const Header = (props: Props) => {
-  console.log(props.images, 'checking props');
-  
-  const style = {
-    backgroundImage: props.images ?  `url(${props.images.acf.image})` : null,
-    backgroundSize: 'cover',
+interface State {
+  overlayOpen: boolean,
+}
+
+class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      overlayOpen: false,
+    }
   }
   
+render() {
+
+  console.log(this.props.images, 'checking props');
+  const menuClick = () => {
+    this.setState({
+      overlayOpen: true,
+    })
+    document.body.classList.add('no-scroll');
+    console.log('menuclick');
+  };
+
+  const menuClose = () => {
+    this.setState({
+      overlayOpen: false,
+    })
+    document.body.classList.remove('no-scroll');
+  };
+
+  const style = {
+    backgroundImage: this.props.images ?  `url(${this.props.images.acf.image})` : null,
+    backgroundSize: 'cover',
+  }
+
   const altStyle = {
     backgroundImage: 'url(https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kRs.jpg)',
     backgroundSize: 'cover',
   }
 
-  return(
-  <div className="header" style={props.images ? style : altStyle}> 
-    <MenuComponent menuClick={props.menuClick} />
-    <OverlayComponent overlayOpen={props.overlayOpen} menuClose={props.menuClose} />
+return (
+  <div className="header" style={this.props.images ? style : altStyle}> 
+    <MenuComponent menuClick={menuClick} />
+    <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>
-)};
-
+    )
+  }
+}
 export default Header;

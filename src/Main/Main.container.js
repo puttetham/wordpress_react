@@ -8,7 +8,6 @@ class Main extends Component {
     super();
     this.state = {
       images: [],
-      overlayOpen: false,
     }
   }
   
@@ -26,23 +25,9 @@ componentDidMount() {
 
 render() {
 
-  const menuClick = () => {
-    this.setState({
-      overlayOpen: true,
-    })
-    document.body.classList.add('no-scroll');
-  };
-
-  const menuClose = () => {
-    this.setState({
-      overlayOpen: false,
-    })
-    document.body.classList.remove('no-scroll');
-  };
-
 return (
       <div className="main">
-        <HeaderComponent images={this.state.images[0]} menuClick={menuClick} menuClose={menuClose} overlayOpen={this.state.overlayOpen} />
+        <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen} />
         <FooterComponent />
       </div>
     )
