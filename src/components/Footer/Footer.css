@@ -15,8 +15,7 @@
   bottom: 0;
   transform: translateY(70%);
   transition: transform .4s;
-  background: grey;
-  display: flex;
+  background: #213659;
 }
 
 .hover-div > h3 {

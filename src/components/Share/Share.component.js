@@ -9,12 +9,12 @@ interface Props {
 
 const Share = (props: Props) => (
   <div className="share">
-    Share on Social Media:
+    <p>Share on Social Media:</p>
     <div className="icons">
-      <a href="" alt="">Facebook</a>
-      <a href="" alt="">Instagram</a>
-      <a href="" alt="">Twitter</a>
-      <a href="" alt="">Mail</a>
+      <a href="" alt="Facebook">Facebook</a>
+      <a href="" alt="Instagram">Instagram</a>
+      <a href="" alt="Twitter">Twitter</a>
+      <a href="" alt="Mail">Mail</a>
     </div>
   </div>
 );

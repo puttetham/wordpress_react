@@ -29,7 +29,6 @@
 .line.close:last-child {
   transform: rotate(-45deg);
   transform-origin: 50% 50%;
-    
 }
 
 .link-div > a {

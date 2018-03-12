@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 import HeaderComponent from '../components/Header/Header.component';
+import HeadlineComponent from '../components/Headline/Headline.component';
+import FooterComponent from '../components/Footer/Footer.component';
 import './Bookings.css';
+
 
 class Bookings extends Component {
   constructor() {
@@ -27,6 +30,10 @@ const heroImage = 'https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kR
 return (
       <div className="bookings">
         <HeaderComponent heroImage={heroImage} />
+        <div className="grid-container outer-padding-box">
+          <HeadlineComponent title="Kommande Spelningar" description="Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text."/>
+        </div>
+        <FooterComponent />
       </div>
     )
   }
