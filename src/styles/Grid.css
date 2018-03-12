@@ -4,6 +4,10 @@
 	grid-template-columns: repeat(24, [col-start] 1fr);
 }
 
+.outer-padding-box {
+	padding: 3rem;
+}
+
 .grid-item{
 	// background-color: rgba(0,0,0,.1);
 }
