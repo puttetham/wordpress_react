@@ -11,7 +11,7 @@ const Routes = () => (
     <Route exact path="/" component={MainContainer} />
     <Route exact path="/bookings" component={BookingsContainer} />
     <Route exact path="/contact" component={ContactContainer} />
-    <Route exact path="/:locale" component={MainContainer} />
+    {/* <Route exact path="/:locale" component={MainContainer} /> */}
     <Redirect from="*" to="/" />
   </Switch>
 );

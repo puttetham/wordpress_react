@@ -1,6 +1,5 @@
 import React from 'react';
 
-import MenuComponent from '../Menu/Menu.component';
 import './Text.css'
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
   description: string,
 }
 
-const Footer = (props: Props) => {  
+const Text = (props: Props) => {  
   return(
     <div className="text"> 
       <h2>{props.title}</h2>
@@ -16,4 +15,4 @@ const Footer = (props: Props) => {
     </div>
   )};
 
-export default Footer;
+export default Text;

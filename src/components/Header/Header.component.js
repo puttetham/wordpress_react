@@ -48,6 +48,7 @@ render() {
     backgroundImage: `url(${this.props.heroImage})`,
     backgroundSize: 'cover',
   }
+  
 return (
   <div className="header" style={this.props.images ? altStyle : altStyle}> 
     <MenuComponent menuClick={menuClick} />
