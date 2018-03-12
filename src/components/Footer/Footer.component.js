@@ -10,7 +10,9 @@ interface Props {
 const Footer = (props: Props) => {  
   return(
     <div className="footer"> 
-      <h3>Footer</h3>
+      <div className="hover-div">
+        <h3>Footer</h3>
+      </div>
     </div>
   )};
 
