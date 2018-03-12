@@ -1,3 +1,11 @@
 .share {
   
 }
+
+.icons {
+  display: flex;
+}
+
+.icons > a {
+  text-decoration: none;
+}
