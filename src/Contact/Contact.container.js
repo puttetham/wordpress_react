@@ -23,7 +23,7 @@ return (
       <div className="contact">
         <HeaderComponent heroImage={heroImage}/>
         <div className="grid-container outer-padding-box">
-          <HeadlineComponent title="Kommande Spelningar" description="Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text."/>
+          <HeadlineComponent title="Kontakt" description="Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text."/>
         </div>
         <FooterComponent />
       </div>
