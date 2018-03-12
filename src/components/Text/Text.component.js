@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Text = (props: Props) => {  
-  return(
+  return (
     <div className="text"> 
       <h2>{props.title}</h2>
       <p>{props.description}</p>

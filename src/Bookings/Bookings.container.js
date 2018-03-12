@@ -7,7 +7,6 @@ class Bookings extends Component {
   constructor() {
     super();
     this.state = {
-      
     }
   }
   
