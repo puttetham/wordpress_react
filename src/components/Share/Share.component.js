@@ -10,9 +10,11 @@ interface Props {
 
 //https://simplesharebuttons.com/images/somacro/twitter.png
 
+//TODO adda soundcloud, beatport, ev. spotify, ändra länkarna så man kommer till shurdas IG FB osv
+
 const Share = (props: Props) => (
   <div className="share">
-    <p>Share on Social Media</p>
+    <p>Check me out</p>
     <div className="icons">
       <a href=""><img src={FacebookLogo} alt="" /></a>
       <a href=""><img src={InstagramLogo} alt="" /></a>

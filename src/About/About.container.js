@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import HeaderComponent from '../components/Header/Header.component';
 import HeadlineComponent from '../components/Headline/Headline.component';
 import FooterComponent from '../components/Footer/Footer.component';
-import TwoColumnTextComponent from '../components/TwoColumnText/TwoColumnText.component';
-import './Bookings.css';
+
+import './About.css';
 
 
-class Bookings extends Component {
+class About extends Component {
   constructor() {
     super();
     this.state = {
@@ -29,15 +29,14 @@ componentDidMount() {
 render() {
 const heroImage = 'https://img.wallpapersafari.com/desktop/1920/1080/28/77/hD2kRs.jpg';
 return (
-      <div className="bookings">
+      <div className="About">
         <HeaderComponent heroImage={heroImage} />
         <div className="grid-container outer-padding-box">
-          <HeadlineComponent title="Kommande Spelningar" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-          {/* <TwoColumnTextComponent title="Column title"/> */}
+          <HeadlineComponent title="About" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
         </div>
         <FooterComponent />
       </div>
     )
   }
 }
-export default Bookings;
+export default About;

@@ -13,7 +13,7 @@ const TwoColumnText = (props: Props) => {
 
   const colOneData = [
     {
-      place: "Lorem",
+      place: "",
       date: "LoremDate",
     },
     {
@@ -43,8 +43,6 @@ const TwoColumnText = (props: Props) => {
       <h2>{props.title}</h2>
       <div className="colOne">
         {colOneRender}
-      </div>
-      <div className="colTwo">
       </div>
     </div>
   )};

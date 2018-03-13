@@ -12,6 +12,9 @@ const Footer = (props: Props) => {
     <div className="footer-wrapper"> 
       <div className="hover-div">
         <ShareComponent />
+        {/* <div className="email">
+          <p>lorem@contact.com</p>
+        </div> */}
       </div>
     </div>
   )};
