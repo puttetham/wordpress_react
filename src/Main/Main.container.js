@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HeaderComponent from '../components/Header/Header.component';
 import HeadlineComponent from '../components/Headline/Headline.component';
 import FooterComponent from '../components/Footer/Footer.component';
+import MediaPlayer from '../components/MediaPlayer/MediaPlayer.component';
 
 class Main extends Component {
   constructor() {
@@ -32,7 +33,8 @@ return (
       <div className="main">
         <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen} heroImage={heroImage} />
         <div className="grid-container outer-padding-box">
-          <HeadlineComponent title={this.state.title} description={this.state.description}/>
+          <MediaPlayer />
+          {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
         </div>
         <FooterComponent />
       </div>

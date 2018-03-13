@@ -1,0 +1,42 @@
+.media-player{
+
+}
+
+#audio_progress_overlay {
+  color: red;
+  border: 1px solid black;
+}
+
+.audio_player {
+  display: flex;
+  width: 500px;
+  flex-direction: column-reverse;
+  height: 500px;
+  background: lightblue;
+}
+
+#audio_progress_container {
+  width: 100%;
+  background: red;
+  height: 5px;
+}
+
+#audio_progress {
+  height: 5px;
+  width: 50px;
+  background: black;
+}
+#skip_button {
+  background: green;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#play_pause_button {
+  background: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
