@@ -8,13 +8,17 @@
 }
 
 .audio_player {
-  display: flex;
+ display: flex;
   width: 500px;
-  flex-direction: column-reverse;
   height: 500px;
   background: lightblue;
 }
 
+.right_facing_triangle {
+  color: #000;
+  width: 40px;
+  height: 40px;
+}
 #audio_progress_container {
   width: 100%;
   background: red;
@@ -26,6 +30,7 @@
   width: 50px;
   background: black;
 }
+
 #skip_button {
   background: green;
   height: 50px;
@@ -33,6 +38,7 @@
   border-radius: 50%;
   border: 1px solid black;
 }
+
 #play_pause_button {
   background: red;
   height: 50px;

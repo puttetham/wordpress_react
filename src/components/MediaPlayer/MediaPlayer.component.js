@@ -25,7 +25,7 @@ render() {
     }
   ];
 
-  const controls = ['playpause', 'forwardskip', 'progressdisplay'];
+  const controls = ['playpause', 'backskip', 'forwardskip', 'progressdisplay'];
   
 return (
       <div className="media-player">
