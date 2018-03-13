@@ -25,7 +25,7 @@ componentDidMount() {
         })
       })
   }
-
+// kolla inspiration https://www.wix.com/website/templates/html/music/dj
 render() {
   const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
