@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HeaderComponent from '../components/Header/Header.component';
 import HeadlineComponent from '../components/Headline/Headline.component';
 import FooterComponent from '../components/Footer/Footer.component';
+import TwoColumnTextComponent from '../components/TwoColumnText/TwoColumnText.component';
 import './Bookings.css';
 
 
@@ -32,6 +33,7 @@ return (
         <HeaderComponent heroImage={heroImage} />
         <div className="grid-container outer-padding-box">
           <HeadlineComponent title="Kommande Spelningar" description="Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text."/>
+          <TwoColumnTextComponent title="Column title"/>
         </div>
         <FooterComponent />
       </div>

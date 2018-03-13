@@ -1,0 +1,12 @@
+.two-column-text {
+
+}
+
+.colOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+}
