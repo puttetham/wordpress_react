@@ -39,15 +39,15 @@ render() {
   }
 return (
     <div className="media-player">
-      <Audio
+      {/*<Audio
         width={400}
         height={300}
         playlist={playlist}
         fullPlayer
         // style={style}
-      />
+      /> */}
       <ShareComponent />
-      {/* <iframe allowtransparency="true" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fthe-bugle&color=orange_white&size=32" style={style}></iframe> */}
+      <iframe width="400" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/245095911&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </div>
     )
   }
