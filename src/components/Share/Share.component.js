@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './Share.css';
-import FacebookLogo from '../../assets/facebook.svg';
-import InstagramLogo from '../../assets/instagram.svg';
-import TwitterLogo from '../../assets/twitter.svg';
+import SoundCloud from '../../assets/soundcloud.svg';
+import Instagram from '../../assets/instagram.svg';
+import Spotify from '../../assets/spotify.svg';
 
 interface Props {
 }
@@ -11,15 +11,13 @@ interface Props {
 //https://simplesharebuttons.com/images/somacro/twitter.png
 
 //TODO adda soundcloud, beatport, ev. spotify, ändra länkarna så man kommer till shurdas IG FB osv
-
+//www.flaticon.com
 const Share = (props: Props) => (
   <div className="share">
-    <p>Check me out</p>
     <div className="icons">
-      <a href=""><img src={FacebookLogo} alt="" /></a>
-      <a href=""><img src={InstagramLogo} alt="" /></a>
-      <a href=""><img src={TwitterLogo} alt="" /></a>
-      
+      <a href=""><img src={SoundCloud} alt="" /></a>
+      <a href=""><img src={Spotify} alt="" /></a>
+      <a href=""><img src={Instagram} alt="" /></a>
     </div>
   </div>
 );
