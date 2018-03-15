@@ -3,7 +3,7 @@
   width: 100vw;
   z-index:11;
   position: absolute;
-  background: #191919;
+  background: rgba(220,220,220,0.5);
   transform: translateY(-100%);
   transition: transform .8s;
   display: flex;

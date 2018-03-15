@@ -1,3 +1,12 @@
 .main {
   /* background: url("https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg") no-repeat fixed center;  */
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

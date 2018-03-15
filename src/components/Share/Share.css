@@ -3,23 +3,13 @@
  align-items: center;
  position: absolute;
  right: 3rem;
- 
 }
-
-/* .share > p {
-  font-size: 1rem;
-  
-  margin-top: 0;
-  margin-bottom: 0;
-  color: white;
-  border-right: 1px solid white;
-  padding-right: 1rem;
-} */
 
 a > img {
   height: 30px;
   width: auto;
 }
+
 .icons {
   display: flex;
   align-items: center;

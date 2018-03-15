@@ -40,8 +40,8 @@ render() {
 return (
     <div className="media-player">
       <Audio
-        width={500}
-        height={400}
+        width={400}
+        height={300}
         playlist={playlist}
         fullPlayer
         // style={style}
