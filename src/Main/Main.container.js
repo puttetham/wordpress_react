@@ -4,7 +4,7 @@ import HeaderComponent from '../components/Header/Header.component';
 import HeadlineComponent from '../components/Headline/Headline.component';
 import FooterComponent from '../components/Footer/Footer.component';
 import MediaPlayer from '../components/MediaPlayer/MediaPlayer.component';
-
+import Background from '../assets/nebula.jpg';
 
 import './Main.css';
 
@@ -32,9 +32,13 @@ componentDidMount() {
 
 // kolla inspiration https://www.wix.com/website/templates/html/music/dj
 render() {
+  const style = {
+    backgroundImage: `url(${Background})`,
+    backgroundSize: 'cover',
+  }
   // const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
-      <div className="main">
+      <div className="main" style={style}>
         <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
         <div className="flex-container">
           {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
