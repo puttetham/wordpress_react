@@ -5,6 +5,8 @@ import HeadlineComponent from '../components/Headline/Headline.component';
 import FooterComponent from '../components/Footer/Footer.component';
 import MediaPlayer from '../components/MediaPlayer/MediaPlayer.component';
 
+import './Main.css';
+
 class Main extends Component {
   constructor() {
     super();
@@ -32,8 +34,8 @@ render() {
 return (
       <div className="main">
         <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen} heroImage={heroImage} />
+        <MediaPlayer />        
         <div className="grid-container outer-padding-box">
-          <MediaPlayer />
           {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
         </div>
         <FooterComponent />
