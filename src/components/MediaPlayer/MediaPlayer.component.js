@@ -47,7 +47,7 @@ return (
         // style={style}
       /> */}
       <ShareComponent />
-      <iframe width="400" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/245095911&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe width="400" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/197591238&color=%2311161f&auto_play=false&hide_related=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
     )
   }
