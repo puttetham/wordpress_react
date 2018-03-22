@@ -10,17 +10,10 @@
   align-items: center;
 }
 
-.iframe-wrapper {
-  height: 166px;
-  overflow: hidden;
-  transition: height .4s;
-  
+.aside {
+  align-self: flex-end;
+  margin-right: 1rem;
 }
 
-.iframe-wrapper:hover {
-  height:400px;
-  transition: height .4s;
-  
-}
 
 

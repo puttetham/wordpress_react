@@ -1,0 +1,22 @@
+.soundcloud {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  border-radius: 5px;
+}
+
+.iframe-wrapper {
+  height: 166px;
+  overflow: hidden;
+  transition: height .4s;
+  position: relative;
+  
+}
+
+.iframe-wrapper:hover {
+  height:400px;
+  transition: height .4s;
+  
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Audio from 'react-audioplayer';
 import ShareComponent from '../Share/Share.component';
 import UpcomingDates from '../UpcomingDates/UpcomingDates.component';
+import SoundcloudComponent from '../Soundcloud/Soundcloud.component';
 
 import './MediaPlayer.css';
 class MediaPlayer extends Component {
@@ -47,11 +48,11 @@ return (
         fullPlayer
         // style={style}
       /> */}
+      <SoundcloudComponent />
+      <div className="aside">
       <UpcomingDates />
-      <div className="iframe-wrapper">
-        <iframe width="400" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/197591238&color=%2311161f&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-      </div>
       <ShareComponent />
+      </div>
     </div>
     )
   }

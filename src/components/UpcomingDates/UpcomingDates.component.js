@@ -26,11 +26,6 @@ const UpcomingDates = (props: Props) => {
       time: '9pm',
       title: 'MGM Grand Garden Arena',
     },
-    {
-      date: '18-04-23',
-      time: '9pm',
-      title: 'MGM Grand Garden Arena',
-    }
   ]
 
   const dateRender = dateData.map((t, i) => (
@@ -42,8 +37,10 @@ const UpcomingDates = (props: Props) => {
   ));
 
   return (
-    <div className="upcoming-dates col-start-span-7"> 
-      <h2>{dateData[0].headline}</h2>
+    <div className="upcoming-dates col-start-span-7">
+      <div className="divider">
+        <h2>{dateData[0].headline}</h2>
+      </div>
       <div className="date-container">
         {dateRender}
       </div>
