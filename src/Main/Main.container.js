@@ -35,6 +35,7 @@ render() {
   const style = {
     backgroundImage: `url(${Background})`,
     backgroundSize: 'cover',
+    backgroundAttachment: 'center fixed',
   }
   // const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
