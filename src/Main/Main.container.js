@@ -42,13 +42,15 @@ render() {
   // const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
       <div className="main" style={style}>
-        {/* <NavbarComponent /> */}
-        <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
-        <div className="flex-container">
-          {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
-          <MediaPlayer />
+        <div className="content-container">
+          {/* <NavbarComponent /> */}
+          <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
+          <div className="flex-container">
+            {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
+            <MediaPlayer />
+          </div>
+          {/* <FooterComponent /> */}
         </div>
-        {/* <FooterComponent /> */}
       </div>
     )
   }

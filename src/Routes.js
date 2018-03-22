@@ -6,6 +6,7 @@ import MainContainer from './Main/Main.container';
 import BookingsContainer from './Bookings/Bookings.container';
 import ContactContainer from './Contact/Contact.container';
 import AboutContainer from './About/About.container';
+import LandingPage from './LandingPage/LandingPage.component';
 
 const Routes = () => (
   <Switch>
@@ -13,6 +14,7 @@ const Routes = () => (
     <Route exact path="/bookings" component={BookingsContainer} />
     <Route exact path="/contact" component={ContactContainer} />
     <Route exact path="/about" component={AboutContainer} />
+    <Route exact path="/landing-page" component={LandingPage} />
     <Redirect from="*" to="/" />
   </Switch>
 );
