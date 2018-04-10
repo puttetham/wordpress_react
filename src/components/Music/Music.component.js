@@ -10,7 +10,7 @@ interface Props {
 class Music extends React.Component {
   render() {
     return (
-      <div className="Musict"> 
+      <div className="music"> 
           <HeadlineComponent title="Music"/>
       </div>
     )

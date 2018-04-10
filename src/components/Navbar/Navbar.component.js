@@ -31,7 +31,7 @@ const Navbar = (props: Props) => {
   ];
 
   const linkRender = linkItems.map((t, i) => (
-    <div key={t} className="link-item">
+    <div key={i} className="link-item">
       <a href={t.href}><p>{t.title}</p></a>
     </div>
   ));

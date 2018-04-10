@@ -6,15 +6,10 @@ import './About.css'
 interface Props {
 }
 
-
-
-
-
-
 class About extends React.Component {
   render() {
     return (
-      <div className="About"> 
+      <div className="about"> 
           <HeadlineComponent title="About" description="Lorem test"/>
       </div>
     )

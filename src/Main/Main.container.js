@@ -48,16 +48,15 @@ render() {
 return (
       <div className="main" >
         <div className="content-container">
-
-
           <ScrollableAnchor id={'HeaderSection'}>
             <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
           </ScrollableAnchor>
+
           <div className="flex-container">
-          <ScrollableAnchor id={'AboutSection'}>
-            <AboutComponent />
-           </ScrollableAnchor>
-            {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
+            <ScrollableAnchor id={'AboutSection'}>
+              <AboutComponent />
+            </ScrollableAnchor>
+           
             <ScrollableAnchor id={'GallerySection'}>
               <GalleryComponent />
             </ScrollableAnchor>
@@ -68,12 +67,9 @@ return (
             
             <ScrollableAnchor id={'ContactSection'}>
               <ContactComponent />
-              
             </ScrollableAnchor>
             <FooterComponent />
-           {/* <MediaPlayer /> */}
           </div>
-          {/* <FooterComponent /> */}
         </div>
       </div>
     )
