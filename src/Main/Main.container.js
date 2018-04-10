@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
 import HeaderComponent from '../components/Header/Header.component';
-import HeadlineComponent from '../components/Headline/Headline.component';
-import FooterComponent from '../components/Footer/Footer.component';
+import AboutComponent from '../components/About/About.component';
 import MediaPlayer from '../components/MediaPlayer/MediaPlayer.component';
 import NavbarComponent from '../components/Navbar/Navbar.component';
+import GalleryComponent from '../components/Gallery/Gallery.component';
+import MusicComponent from '../components/Music/Music.component';
+import ContactComponent from '../components/Contact/Contact.component';
+import FooterComponent from '../components/Footer/Footer.component';
 
 import Background from '../assets/nebula.jpg';
 
@@ -46,7 +49,12 @@ return (
           {/* <NavbarComponent /> */}
           <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
           <div className="flex-container">
-            <HeadlineComponent title={this.state.title} description={this.state.description}/>
+            <AboutComponent />
+            {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
+            <GalleryComponent />
+            <MusicComponent />
+            <ContactComponent />
+            <FooterComponent />
            {/* <MediaPlayer /> */}
           </div>
           {/* <FooterComponent /> */}

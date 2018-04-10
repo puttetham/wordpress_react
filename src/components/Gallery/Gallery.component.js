@@ -1,5 +1,6 @@
 import React from 'react';
 
+import HeadlineComponent from '../Headline/Headline.component';
 import './Gallery.css'
 
 interface Props {
@@ -19,19 +20,20 @@ const galleryImages = [
   },
 ];
 
-const style = {
-  backgroundImage: `url(${image})`,
-  backgroundSize: 'cover',
-  backgroundAttachment: 'center fixed',
-}
+// const style = {
+//   backgroundImage: `url(${image})`,
+//   backgroundSize: 'cover',
+//   backgroundAttachment: 'center fixed',
+// }
 
 const Gallery = (props: Props) => {  
-  const galleryRender = galleryImages.map((t,i) => (
-    <div className="imageItem" style={{backgroundImage: `url(${image})`, backgroundSize: 'cover'}} key={t} />
-  ));
+  // const galleryRender = galleryImages.map((t,i) => (
+  //   <div className="imageItem" style={{backgroundImage: `url(${image})`, backgroundSize: 'cover'}} key={t} />
+  // ));
   return (
     <div className="gallery"> 
-      {galleryRender}
+      {/* {galleryRender} */}
+       <HeadlineComponent title="Gallery" />
     </div>
   )};
 
