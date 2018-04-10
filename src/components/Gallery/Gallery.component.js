@@ -26,15 +26,26 @@ const galleryImages = [
 //   backgroundAttachment: 'center fixed',
 // }
 
-const Gallery = (props: Props) => {  
-  // const galleryRender = galleryImages.map((t,i) => (
-  //   <div className="imageItem" style={{backgroundImage: `url(${image})`, backgroundSize: 'cover'}} key={t} />
-  // ));
+/* const Gallery = (props: Props) => {  
+   const galleryRender = galleryImages.map((t,i) => (
+    <div className="imageItem" style={{backgroundImage: `url(${image})`, backgroundSize: 'cover'}} key={t} />
+   ));
   return (
     <div className="gallery"> 
-      {/* {galleryRender} */}
+      {galleryRender}
        <HeadlineComponent title="Gallery" />
     </div>
   )};
 
+export default Gallery; */
+
+class Gallery extends React.Component {
+  render() {
+    return (
+      <div className="gallery"> 
+          <HeadlineComponent title="Gallery"/>
+      </div>
+    )
+  }
+}
 export default Gallery;

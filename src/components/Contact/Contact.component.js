@@ -6,12 +6,13 @@ import './Contact.css'
 interface Props {
 }
 
-const Contact = (props: Props) => {  
-  
-  return (
-    <div className="contact"> 
-        <HeadlineComponent title="Contact" />
-    </div>
-  )};
-
+class Contact extends React.Component {
+  render() {
+    return (
+      <div className="contact"> 
+          <HeadlineComponent title="Contact"/>
+      </div>
+    )
+  }
+}
 export default Contact;

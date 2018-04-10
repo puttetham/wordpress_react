@@ -9,6 +9,8 @@ import MusicComponent from '../components/Music/Music.component';
 import ContactComponent from '../components/Contact/Contact.component';
 import FooterComponent from '../components/Footer/Footer.component';
 
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 import Background from '../assets/nebula.jpg';
 
 import './Main.css';
@@ -46,14 +48,28 @@ render() {
 return (
       <div className="main" >
         <div className="content-container">
-          {/* <NavbarComponent /> */}
-          <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
+
+
+          <ScrollableAnchor id={'HeaderSection'}>
+            <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
+          </ScrollableAnchor>
           <div className="flex-container">
+          <ScrollableAnchor id={'AboutSection'}>
             <AboutComponent />
+           </ScrollableAnchor>
             {/* <HeadlineComponent title={this.state.title} description={this.state.description}/> */}
-            <GalleryComponent />
-            <MusicComponent />
-            <ContactComponent />
+            <ScrollableAnchor id={'GallerySection'}>
+              <GalleryComponent />
+            </ScrollableAnchor>
+            
+            <ScrollableAnchor id={'MusicSection'}>
+             <MusicComponent />
+            </ScrollableAnchor>
+            
+            <ScrollableAnchor id={'ContactSection'}>
+              <ContactComponent />
+              
+            </ScrollableAnchor>
             <FooterComponent />
            {/* <MediaPlayer /> */}
           </div>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
+import NavbarComponent from '../Navbar/Navbar.component';
+
 import './Header.css'
 
 interface Props {
@@ -51,10 +53,10 @@ render() {
   
 return (
   <div className="header" style={this.props.images ? altStyle : altStyle}> 
-    {!this.state.overlayOpen && 
+    {/*  {!this.state.overlayOpen && 
       <MenuComponent menuClick={menuClick} />
-    }
-    
+    }   */}
+    <NavbarComponent />
     <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>
     )

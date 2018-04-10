@@ -6,12 +6,18 @@ import './About.css'
 interface Props {
 }
 
-const About = (props: Props) => {  
-  
-  return (
-    <div className="About"> 
-        <HeadlineComponent title="About" description="Lorem test"/>
-    </div>
-  )};
 
+
+
+
+
+class About extends React.Component {
+  render() {
+    return (
+      <div className="About"> 
+          <HeadlineComponent title="About" description="Lorem test"/>
+      </div>
+    )
+  }
+}
 export default About;

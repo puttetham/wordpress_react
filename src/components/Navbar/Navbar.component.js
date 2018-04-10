@@ -9,20 +9,24 @@ interface Props {
 const Navbar = (props: Props) => {
   const linkItems = [
     {
-      href: '/',
+      href: '#HeaderSection',
       title: 'Start',
     },
     {
-      href: '/bookings',
-      title: 'Booking',
-    },
-    {
-      href: '/contact',
-      title: 'Contact',
-    },
-    {
-      href: '/about',
+      href: '#AboutSection',
       title: 'About',
+    },
+    {
+      href: '#GallerySection',
+      title: 'Gallery',
+    },
+    {
+      href: '#MusicSection',
+      title: 'Music',
+    },
+    {
+      href: '#ContactSection',
+      title: 'Contact',
     },
   ];
 

@@ -1,17 +1,19 @@
 import React from 'react';
 
 import HeadlineComponent from '../Headline/Headline.component';
+import SoundcloudComponent from '../Soundcloud/Soundcloud.component';
 import './Music.css'
 
 interface Props {
 }
 
-const Music = (props: Props) => {  
-  
-  return (
-    <div className="Music"> 
-        <HeadlineComponent title="Music" />
-    </div>
-  )};
-
+class Music extends React.Component {
+  render() {
+    return (
+      <div className="Musict"> 
+          <HeadlineComponent title="Music"/>
+      </div>
+    )
+  }
+}
 export default Music;

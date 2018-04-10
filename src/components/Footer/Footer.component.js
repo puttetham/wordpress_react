@@ -6,12 +6,13 @@ import './Footer.css'
 interface Props {
 }
 
-const Footer = (props: Props) => {  
-  
-  return (
-    <div className="footer"> 
-        <HeadlineComponent title="Footer" />
-    </div>
-  )};
-
+class Footer extends React.Component {
+  render() {
+    return (
+      <div className="footer"> 
+          <HeadlineComponent title="Footer" />
+      </div>
+    )
+  }
+}
 export default Footer;
