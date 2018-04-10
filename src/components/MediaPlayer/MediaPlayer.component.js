@@ -39,7 +39,11 @@ render() {
   }
 return (
     <div className="media-player">
+<<<<<<< HEAD
      
+=======
+    
+>>>>>>> 72b4b34073aadee405fca295b805bb8fd0ae68b1
       <ShareComponent />
       {/* <iframe allowtransparency="true" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fthe-bugle&color=orange_white&size=32" style={style}></iframe> */}
     </div>
