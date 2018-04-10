@@ -37,7 +37,7 @@ render() {
   // ]
   const style = {
     height: '50px',
-    width: '100px',
+    width: '200px',
   }
 return (
     <div className="media-player">
