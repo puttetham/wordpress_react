@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Audio from 'react-audioplayer';
+
 import ShareComponent from '../Share/Share.component';
 
 import './MediaPlayer.css';
@@ -39,13 +39,7 @@ render() {
   }
 return (
     <div className="media-player">
-      <Audio
-        width={500}
-        height={400}
-        playlist={playlist}
-        fullPlayer
-        // style={style}
-      />
+     
       <ShareComponent />
       {/* <iframe allowtransparency="true" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fthe-bugle&color=orange_white&size=32" style={style}></iframe> */}
     </div>
