@@ -10,7 +10,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about"> 
-          <HeadlineComponent title="About" description="Lorem test"/>
+          <HeadlineComponent title="About"/>
       </div>
     )
   }

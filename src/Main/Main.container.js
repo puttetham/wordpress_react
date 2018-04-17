@@ -67,9 +67,7 @@ componentDidMount() {
 // kolla inspiration https://www.wix.com/website/templates/html/music/dj
 render() {
   if (this.winW > 450) {
-    let height = window.innerHeight;
-    let offset = 0.08;
-    configureAnchors({offset: -(height * offset), scrollDuration: 400})
+    configureAnchors({offset: -72, scrollDuration: 400})
   }
   
   
