@@ -10,28 +10,33 @@ const Navbar = (props: Props) => {
   const linkItems = [
     {
       href: '#HeaderSection',
-      title: 'Start',
+      title: 'START',
+      color: 'red',
     },
     {
       href: '#AboutSection',
-      title: 'About',
+      title: 'ABOUT',
+      color: 'blue',
     },
     {
       href: '#GallerySection',
-      title: 'Gallery',
+      title: 'GALLERY',
+      color: 'orange',
     },
     {
       href: '#MusicSection',
-      title: 'Music',
+      title: 'MUSIC',
+      color: 'grey',
     },
     {
       href: '#ContactSection',
-      title: 'Contact',
+      title: 'CONTACT',
+      color: 'black',
     },
   ];
 
   const linkRender = linkItems.map((t, i) => (
-    <div key={i} className="link-item">
+    <div key={i} className={`link-item ${t.color}`}>
       <a href={t.href}><p>{t.title}</p></a>
     </div>
   ));

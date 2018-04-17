@@ -4,6 +4,7 @@ import './Menu.css'
 
 interface Props {
   menuClick: Function,
+  overlayOpen: boolean,
 }
 
 const Menu = (props: Props) => (

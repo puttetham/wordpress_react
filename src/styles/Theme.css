@@ -4,6 +4,10 @@
 @custom-media --hdpi (width > 1280px) and (width <= 1440px);
 @custom-media --large (width > 1440px); */
 
+@font-face {
+    font-family: test;
+    src: url('../assets/fonts/LemonMilk.otf');
+}
 
 html {
 	font-size: 100%;
@@ -12,6 +16,7 @@ html {
 body{
 	margin: 0;
 	overflow-x: hidden;	
+	font-family: test;
 }
 
 .no-scroll {
@@ -23,9 +28,9 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 7rem;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+	font-size: 2em;
+	margin-bottom: 40px;
+	margin-top: 70px;
 }
 
 h2 {

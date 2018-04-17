@@ -16,6 +16,7 @@ interface Props {
 
 interface State {
   overlayOpen: boolean,
+  isMobile: boolean,
 }
 
 class Header extends Component {
@@ -23,10 +24,13 @@ class Header extends Component {
     super();
     this.state = {
       overlayOpen: false,
+      isMobile: window.innerWidth <= 450,
     }
   }
   
+  
 render() {
+
   const menuClick = () => {
     this.setState({
       overlayOpen: true,
@@ -56,7 +60,14 @@ return (
     {/*  {!this.state.overlayOpen && 
       <MenuComponent menuClick={menuClick} />
     }   */}
-    <NavbarComponent />
+    {this.state.isMobile && !this.state.overlayOpen &&
+      <MenuComponent menuClick={menuClick} />
+    }
+
+    {!this.state.isMobile && 
+      <NavbarComponent />
+    }
+    
     <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>
     )
