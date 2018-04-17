@@ -6,7 +6,7 @@
 }
 
 .line {
-  background: white;
+  background: rgba(0, 0, 0, 0.75);
   height: 2px;
   width: 30px;
 }

@@ -13,6 +13,7 @@ interface Props {
   overlayOpen: boolean,
   images: Object,
   heroImage: string,
+  winW: number,
 }
 
 interface State {
@@ -25,7 +26,6 @@ class Header extends Component {
     super();
     this.state = {
       overlayOpen: false,
-      isMobile: window.innerWidth <= 450,
     }
   }
   
@@ -64,11 +64,11 @@ return (
     {/*  {!this.state.overlayOpen && 
       <MenuComponent menuClick={menuClick} />
     }   */}
-    {this.state.isMobile && !this.state.overlayOpen &&
+    {this.props.isMobile && !this.state.overlayOpen &&
       <MenuComponent menuClick={menuClick} />
     }
 
-    {!this.state.isMobile && 
+    {!this.props.isMobile && 
       <NavbarComponent />
     }
     

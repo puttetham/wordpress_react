@@ -20,10 +20,12 @@ import './Main.css';
 class Main extends Component {
   constructor() {
     super();
+    this.winW = window.innerWidth;
     this.state = {
       images: [],
       title: 'Lorem Title',
-      description: 'Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text.'
+      description: 'Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text. Lorem text lorem text lorem text lorem text.',
+      isMobile: false,
     }
   }
   
@@ -32,15 +34,38 @@ componentDidMount() {
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
-        console.log(res);
+        console.log(res, 'response');
         this.setState({
           images: res
         })
       })
+      this.onResize();
+      window.addEventListener('resize', this.onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+  }
+  
+  onResize = () => {
+    this.winW = window.innerWidth;
+
+    if(this.winW <= 450) {
+      this.setState({
+        isMobile: true,
+      })
+    }
+
+    if(this.winW > 450) {
+      this.setState({
+        isMobile: false,
+      })
+    }
   }
 
 // kolla inspiration https://www.wix.com/website/templates/html/music/dj
 render() {
+  
  /*  const style = {
     backgroundImage: `url(${Background})`,
     backgroundSize: 'cover',
@@ -48,10 +73,10 @@ render() {
   } */
   // const heroImage = 'https://pre00.deviantart.net/20fb/th/pre/f/2009/273/5/8/daft_punk_wallpaper_by_goblinfish.jpg';
 return (
-      <div className="main" >
+      <div className="main">
         <div className="content-container">
           <ScrollableAnchor id={'HeaderSection'}>
-            <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
+            <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen} isMobile={this.state.isMobile}  />
           </ScrollableAnchor>
 
           <div className="flex-container">
