@@ -1,13 +1,11 @@
 .nav-bar {
   position: fixed;
   top: 0;
-  height: 7vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #151515;
-  opacity: 0.8;
-
+  background-color: #fff;
 }
 
 .link-div {
@@ -15,16 +13,16 @@
 }
 
 .link-item {
-  padding: 1rem;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 0.5rem;
+  margin-left: 7px;
+  margin-right: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .link-item:hover {
-  background: rgba(0, 0, 0, 0.75);
+  /* background: rgba(0, 0, 0, 0.75); */
 }
 
 .link-item > a {
@@ -33,7 +31,25 @@
 }
 
 a > p {
-  
+  color: rgba(0, 0, 0, 0.75);
   margin: 0;
   font-size: 0.9rem;
+  padding-bottom: 0.2rem;
 }
+/* 
+.START {
+  border-bottom: 2px solid green;
+}
+.ABOUT {
+  border-bottom: 2px solid blue;
+}
+.MUSIC {
+  border-bottom: 2px solid orange;
+}
+.GALLERY {
+  border-bottom: 2px solid pink;
+}
+.CONTACT {
+  border-bottom: 2px solid yellow;
+} */
+

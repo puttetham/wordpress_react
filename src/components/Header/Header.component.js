@@ -4,6 +4,7 @@ import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
 import NavbarComponent from '../Navbar/Navbar.component';
 
+
 import './Header.css'
 
 interface Props {
@@ -52,7 +53,10 @@ render() {
 
   const altStyle = {
     backgroundImage: `url(${this.props.heroImage})`,
-    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+    backgroundSize: '500px auto'
   }
   
 return (

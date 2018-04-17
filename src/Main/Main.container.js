@@ -13,6 +13,8 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 import Background from '../assets/nebula.jpg';
 
+import heroImage from '../assets/boombox.jpeg';
+
 import './Main.css';
 
 class Main extends Component {
@@ -49,7 +51,7 @@ return (
       <div className="main" >
         <div className="content-container">
           <ScrollableAnchor id={'HeaderSection'}>
-            <HeaderComponent images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
+            <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen}  />
           </ScrollableAnchor>
 
           <div className="flex-container">
