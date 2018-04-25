@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
 import NavbarComponent from '../Navbar/Navbar.component';
+import ReactPlayer from 'react-player';
 
 
 import './Header.css'
@@ -64,6 +65,8 @@ return (
     {!this.state.overlayOpen &&
       <MenuComponent menuClick={menuClick} />
     }
+
+    <ReactPlayer url={test} loop mute />
    
     <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>
