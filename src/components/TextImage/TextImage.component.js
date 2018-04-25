@@ -4,7 +4,6 @@ import './TextImage.css'
 
 interface Props {
   title: string,
-  
   colOne: Object,
   colTwo: Object
 }
@@ -18,8 +17,8 @@ const TextImage = (props: Props) => {
   ]
 
   const colOneRender = colOneData.map((t, i) => (
-    <div key={t} className="img">
-        <img src={t.image} width='30%' height='auto' background='red'/>
+    <div key={t} className="img-div">
+        <img src={t.image} width='100px' height='100px' background='red'/>
     </div>
   ));
 
@@ -29,7 +28,9 @@ const TextImage = (props: Props) => {
       <div className="colOne">
         {colOneRender}
       </div>
-      <div className="textDiv"></div>
+      <div className="colTwo">
+       {colTwoRender}
+      </div>
     </div>
   )};
 
