@@ -4,7 +4,7 @@ import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
 import NavbarComponent from '../Navbar/Navbar.component';
 import ReactPlayer from 'react-player';
-
+import IntroVid from '../../assets/danne2.mp4';
 
 import './Header.css'
 
@@ -52,23 +52,23 @@ render() {
     backgroundSize: 'cover',
   }
 
-  const altStyle = {
-    backgroundImage: `url(${this.props.heroImage})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
-    backgroundSize: '500px auto'
-  }
+  // const altStyle = {
+  //   backgroundImage: `url(${this.props.heroImage})`,
+  //   backgroundRepeat: 'no-repeat',
+  //   backgroundAttachment: 'fixed',
+  //   backgroundPosition: 'center',
+  //   backgroundSize: '500px auto'
+  // }
   
 return (
-  <div className="header" style={this.props.images ? altStyle : altStyle}> 
+  <div className="header"> 
+  <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
     {!this.state.overlayOpen &&
       <MenuComponent menuClick={menuClick} />
     }
-
-    <ReactPlayer url={test} loop mute />
-   
-    <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
+    <div className="hero">
+    <ReactPlayer url={IntroVid} playing loop muted width='100vw' height='100vh'/>
+    </div>
   </div>
     )
   }

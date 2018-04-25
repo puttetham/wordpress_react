@@ -4,12 +4,14 @@
   top: 2rem;
   cursor: pointer;
   height: 8vh;
+  z-index: 2;
 }
 
 .line {
-  background: rgba(0, 0, 0, 0.75);
-  height: 2px;
+  background: #fff;
+  height: 4px;
   width: 30px;
+  border-radius: 5px;
 }
 
 .line::after {

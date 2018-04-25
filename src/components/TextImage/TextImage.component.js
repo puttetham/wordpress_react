@@ -29,7 +29,7 @@ const TextImage = (props: Props) => {
         {colOneRender}
       </div>
       <div className="colTwo">
-       {colTwoRender}
+       {/* {colTwoRender} */}
       </div>
     </div>
   )};
