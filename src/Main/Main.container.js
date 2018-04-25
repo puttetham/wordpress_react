@@ -66,9 +66,9 @@ componentDidMount() {
 
 // kolla inspiration https://www.wix.com/website/templates/html/music/dj
 render() {
-  if (this.winW > 450) {
+ /*  if (this.winW > 450) {
     configureAnchors({offset: -72, scrollDuration: 400})
-  }
+  } */
   
   
  /*  const style = {

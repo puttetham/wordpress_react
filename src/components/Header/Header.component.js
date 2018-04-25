@@ -61,17 +61,10 @@ render() {
   
 return (
   <div className="header" style={this.props.images ? altStyle : altStyle}> 
-    {/*  {!this.state.overlayOpen && 
-      <MenuComponent menuClick={menuClick} />
-    }   */}
-    {this.props.isMobile && !this.state.overlayOpen &&
+    {!this.state.overlayOpen &&
       <MenuComponent menuClick={menuClick} />
     }
-
-    {!this.props.isMobile && 
-      <NavbarComponent />
-    }
-    
+   
     <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
   </div>
     )
