@@ -68,6 +68,10 @@ return (
     }
     <div className="hero">
     <ReactPlayer url={IntroVid} playing loop muted width='100vw' height='100vh'/>
+      <div class="hero-text">
+        <h1>DANTRICK</h1>
+        <h2>Stockholm, Sweden</h2>
+      </div>
     </div>
   </div>
     )
