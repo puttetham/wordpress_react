@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AboutPhoto from '../../assets/About-photo.jpg';
+import AboutPhoto from '../../assets/shurda.jpg';
 import './TextImage.css'
 
 interface Props {
