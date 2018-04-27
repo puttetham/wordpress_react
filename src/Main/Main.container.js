@@ -30,19 +30,19 @@ class Main extends Component {
     }
   }
   
-componentDidMount() {
-    let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        console.log(res, 'response');
-        this.setState({
-          images: res
-        })
-      })
-      this.onResize();
-      window.addEventListener('resize', this.onResize);
-  }
+// componentDidMount() {
+//     let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
+//     fetch(dataURL)
+//       .then(res => res.json())
+//       .then(res => {
+//         console.log(res, 'response');
+//         this.setState({
+//           images: res
+//         })
+//       })
+//       this.onResize();
+//       window.addEventListener('resize', this.onResize);
+//   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.onResize);
