@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutPhoto from '../../assets/About-photo.jpg';
 import './TextImage.css'
 
 interface Props {
@@ -12,25 +13,30 @@ const TextImage = (props: Props) => {
 
   const colOneData = [
     {
-        img: "https://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg",
+        img: AboutPhoto,
     },
   ]
 
   const colOneRender = colOneData.map((t, i) => (
     <div key={t} className="img-div">
-        <img src={t.image} width='100px' height='100px' background='red'/>
+        <img src={t.img} background='red'/>
     </div>
   ));
 
   
   return (
-    <div className="text-image wrapper"> 
-      <div className="colOne">
+    <div className="text-image-wrapper"> 
+      <div class="left">
         {colOneRender}
       </div>
-      <div className="colTwo">
-      {/*  {colTwoRender} */}
+
+      <div class="middle">
+        <div className="flex-wrapper">
+        <h1>"THERE ARE PEOPLE WHO PLAY RECORDS AND THERE ARE DJ'S WHO BLOW MINDS."</h1>
+        <p>I'm Danel "Dantrick" Temesghen. A Dj based in Stocktown, Sweden. Lorem ipsum dolor sit amet, has ut integre discere platonem, ex ludus accumsan mandamus has, quot vivendo scripserit eu mel. His lobortis volutpat definitiones ex, mea mollis alienum vulputate ei. Fabellas instructior eos id, ut nulla semper omnium pri, utinam facilisis eos ex. Eam cu illum debet mediocritatem.</p>
+        </div>
       </div>
+    
     </div>
   )};
 

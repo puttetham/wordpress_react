@@ -1,4 +1,7 @@
 .about {
     height: 100vh;
-    background-color: #B4DBC0;
+    width: 100%;
+   /*  background-color: #B4DBC0; */
+   display: flex;
+ 
 }
