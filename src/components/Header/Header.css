@@ -6,12 +6,10 @@
   left: 0;
   /* background-color: lightblue; */
 }
-
-.hero > div > video {
-  height: 100%!important;
-  width: auto!important;
+.hero {
+  height: 100%;
+  width: 100%;
 }
-
 .hero-text {
   position:absolute;
     top: 50%;

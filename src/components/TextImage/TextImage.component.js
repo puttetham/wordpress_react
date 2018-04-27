@@ -13,7 +13,7 @@ const TextImage = (props: Props) => {
   const colOneData = [
     {
         img: "https://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg",
-    }
+    },
   ]
 
   const colOneRender = colOneData.map((t, i) => (
@@ -29,7 +29,7 @@ const TextImage = (props: Props) => {
         {colOneRender}
       </div>
       <div className="colTwo">
-       {/* {colTwoRender} */}
+      {/*  {colTwoRender} */}
       </div>
     </div>
   )};

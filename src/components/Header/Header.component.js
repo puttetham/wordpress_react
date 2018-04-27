@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import MenuComponent from '../Menu/Menu.component';
 import OverlayComponent from '../Overlay/Overlay.component';
 import NavbarComponent from '../Navbar/Navbar.component';
+import VideoComponent from '../Video/Video.component';
 import ReactPlayer from 'react-player';
 import IntroVid from '../../assets/danne2.mp4';
 
@@ -67,7 +68,7 @@ return (
       <MenuComponent menuClick={menuClick} />
     }
     <div className="hero">
-    <ReactPlayer url={IntroVid} playing loop muted width='100vw' height='100vh'/>
+      <VideoComponent src={IntroVid} />
       <div class="hero-text">
         <h1>DANTRICK</h1>
       </div>
