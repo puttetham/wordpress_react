@@ -60,6 +60,7 @@ render() {
   //   backgroundPosition: 'center',
   //   backgroundSize: '500px auto'
   // }
+  console.log('hello');
   
 return (
   <div className="header"> 
