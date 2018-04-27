@@ -63,7 +63,7 @@ render() {
   
 return (
   <div className="header"> 
-  <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
+    <OverlayComponent overlayOpen={this.state.overlayOpen} menuClose={menuClose} />
     {!this.state.overlayOpen &&
       <MenuComponent menuClick={menuClick} />
     }
