@@ -18,8 +18,11 @@
   
 }
 
+.img-div {
+  margin-left: 30%;
+}
+
 .img-div > img {
-  
   width: 80%;
   height: auto;
   border-radius: 10px;
@@ -27,15 +30,28 @@
 
 .middle {
   order:2;
-  
   flex-basis:50%; 
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .middle > .flex-wrapper {
-  width: 90%;
+  width: 50%;
+  height: auto;
   
+  padding: 2rem;
+  border-radius: 10px;
+  margin-right: 30%;
+}
+
+.about-headline {
+  margin-top: 0;
+}
+
+.about-text {
+  color: #181818;
 }
 
 @media screen and (max-width:600px) {

@@ -32,8 +32,8 @@ const TextImage = (props: Props) => {
 
       <div class="middle">
         <div className="flex-wrapper">
-        <h1>"THERE ARE PEOPLE WHO PLAY RECORDS AND THERE ARE DJ'S WHO BLOW MINDS."</h1>
-        <p>I'm Danel "Dantrick" Temesghen. A Dj based in Stocktown, Sweden. Lorem ipsum dolor sit amet, has ut integre discere platonem, ex ludus accumsan mandamus has, quot vivendo scripserit eu mel. His lobortis volutpat definitiones ex, mea mollis alienum vulputate ei. Fabellas instructior eos id, ut nulla semper omnium pri, utinam facilisis eos ex. Eam cu illum debet mediocritatem.</p>
+        <h1 className="about-headline">"THERE ARE PEOPLE WHO PLAY RECORDS AND THERE ARE DJ'S WHO BLOW MINDS."</h1>
+        <p className="about-text">I'm Danel "Dantrick" Temesghen. A Dj based in Stocktown, Sweden. Lorem ipsum dolor sit amet, has ut integre discere platonem, ex ludus accumsan mandamus has, quot vivendo scripserit eu mel. His lobortis volutpat definitiones ex, mea mollis alienum vulputate ei. Fabellas instructior eos id, ut nulla semper omnium pri, utinam facilisis eos ex. Eam cu illum debet mediocritatem.</p>
         </div>
       </div>
     
