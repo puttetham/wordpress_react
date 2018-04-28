@@ -16,7 +16,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className="gallery">
-       {/*  <InstagramComponent /> */}
+        <InstagramComponent />
       </div>
     )
   }
