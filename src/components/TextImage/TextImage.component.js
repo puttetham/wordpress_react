@@ -26,7 +26,7 @@ const TextImage = (props: Props) => {
   
   return (
     <div className="text-image-wrapper"> 
-      <div class="left">
+      <div className="left">
         {colOneRender}
       </div>
 
