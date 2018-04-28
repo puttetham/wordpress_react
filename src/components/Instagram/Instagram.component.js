@@ -11,19 +11,22 @@ interface Props {
 
 
 class Instagram extends React.Component {
+  shouldComponentUpdate() {
+        return false;
+    }
   render() {
     const instafeedTarget = 'instafeed';
     return (
       <div className="instagram" id={instafeedTarget}>
         <Instafeed
-          limit='5'
+          limit='14'
           ref='instafeed'
           resolution='standard_resolution'
           sortBy='most-recent'
           target={instafeedTarget}
           userId='302005911'
           accessToken='302005911.1677ed0.6d2ed4dfcf6d429993689f328aa0da68'
-          template='<img src="{{image}}" />'
+          template='<a class="instafeeda" href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>'
         />
       </div>
     )
@@ -34,4 +37,5 @@ export default Instagram;
 
 // userId='302005911'
 // accessToken='302005911.1677ed0.6d2ed4dfcf6d429993689f328aa0da68'
+
 
