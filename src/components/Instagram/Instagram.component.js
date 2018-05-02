@@ -11,9 +11,11 @@ interface Props {
 
 
 class Instagram extends React.Component {
+
   shouldComponentUpdate() {
-        return false;
-    }
+    return false;
+  }
+
   render() {
     const instafeedTarget = 'instafeed';
     return (

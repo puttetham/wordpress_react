@@ -3,43 +3,24 @@ import React from 'react';
 import './UpcomingDates.css'
 
 interface Props {
+  dates: Array,
 }
 
 const UpcomingDates = (props: Props) => {  
+  console.log(props.dates, 'check date props');
   
-  const dateData = [
-    {
-      headline: 'Upcoming Dates',
-    },
-    {
-      date: '18-04-23',
-      time: '9pm',
-      title: 'MGM Grand Garden Arena',
-    },
-    {
-      date: '18-04-23',
-      time: '9pm',
-      title: 'MGM Grand Garden Arena',
-    },
-    {
-      date: '18-04-23',
-      time: '9pm',
-      title: 'MGM Grand Garden Arena',
-    },
-  ]
-
-  const dateRender = dateData.map((t, i) => (
-    <div key={t} className="date-item">
-      <p>{t.date}</p>
-      <p>{t.time}</p>
-      <p>{t.title}</p>
+  const dateRender = props.dates.map((t, i) => (
+    <div key={i} className="date-item">
+      <p>{t.acf.date}</p>
+      <p>{t.acf.time}</p>
+      <p>{t.acf.venue}</p>
     </div>
   ));
 
   return (
     <div className="upcoming-dates col-start-span-7">
       <div className="divider">
-        <h2>{dateData[0].headline}</h2>
+        <h2>Upcoming Dates</h2>
       </div>
       <div className="date-container">
         {dateRender}
