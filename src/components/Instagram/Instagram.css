@@ -3,17 +3,37 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
-.instafeeda {
+.instafeed {
     display: flex;
     align-items: center;
-    position: relative;
     width: 12%;
     height: auto;
-    background: white;
     padding: 15px;
+    -webkit-transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.instafeed::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;    
+  }
+  
+  .instafeed:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  
+  .instafeed:hover::after {
+      opacity: 1;
+  }
+  
 
 img {
     display: block;
