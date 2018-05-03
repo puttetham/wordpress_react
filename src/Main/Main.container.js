@@ -82,26 +82,26 @@ render() {
 return (
       <div className="main">
         <div className="content-container">
-          {/* <ScrollableAnchor id={'HeaderSection'}> */}
+          <ScrollableAnchor id={'HeaderSection'}>
             <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen} isMobile={this.state.isMobile}  />
-          {/* </ScrollableAnchor> */}
+          </ScrollableAnchor>
 
           <div className="flex-container">
-            {/* <ScrollableAnchor id={'AboutSection'}> */}
+            <ScrollableAnchor id={'AboutSection'}>
               <AboutComponent />
-            {/* </ScrollableAnchor> */}
+            </ScrollableAnchor>
            
-            {/* <ScrollableAnchor id={'GallerySection'}> */}
+            <ScrollableAnchor id={'GallerySection'}>
               <GalleryComponent />
-            {/* </ScrollableAnchor> */}
+            </ScrollableAnchor>
             
-            {/* <ScrollableAnchor id={'MusicSection'}> */}
+            <ScrollableAnchor id={'MusicSection'}>
              <MusicComponent />
-            {/* </ScrollableAnchor> */}
+            </ScrollableAnchor>
             
-            {/* <ScrollableAnchor id={'ContactSection'}> */}
+            <ScrollableAnchor id={'ContactSection'}>
               <ContactComponent />
-            {/* </ScrollableAnchor> */}
+            </ScrollableAnchor>
             <FooterComponent />
           </div>
         </div>

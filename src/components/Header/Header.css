@@ -1,25 +1,36 @@
 .header {
   height: 100vh;
   width: 100%;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  /* background-color: lightblue; */
+ 
 }
+
 .hero {
   height: 100%;
   width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+
 .hero-text {
-  position:absolute;
-    top: 50%;
-    left: 50%;
-    width:30em;
-    height:10em;
-    margin-top: -4em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
-    text-align: center;
-    font-size: 2em;
-    color: #C70039;
-    text-decoration: underline;
+  
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin-left: -110px;
+  margin-top: -100px;
+  text-align: center;
 }
+
+.hero-text h1 {
+  font-size: 3em;
+  color:#C70039;
+  text-decoration: underline;
+}
+
+
+
