@@ -7,6 +7,11 @@
     justify-content: center;
 }
 
+/* .instagram-img {
+    height: 425px;
+    object-fit: cover;
+} */
+
 .instafeed {
     display: flex;
     align-items: center;
@@ -48,6 +53,11 @@ img {
        margin-bottom: 2rem;
     }
     
+    /* .instagram-img {
+        height: auto;
+        object-fit: initial;
+    }
+ */
     .instafeed {
         margin-top: 0;
         margin-bottom: 0;

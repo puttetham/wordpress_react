@@ -28,7 +28,7 @@ class Instagram extends React.Component {
           target={instafeedTarget}
           userId='302005911'
           accessToken='302005911.1677ed0.6d2ed4dfcf6d429993689f328aa0da68'
-          template='<a class="instafeed" href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>'
+          template='<a class="instafeed" href="{{link}}" target="_blank" id="{{id}}"><img  class="instagram-img" src="{{image}}" /></a>'
         />
       </div>
     )
