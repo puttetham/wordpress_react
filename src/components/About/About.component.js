@@ -11,8 +11,11 @@ class About extends React.Component {
   render() {
     return (
       <div className="about"> 
-          {/* <HeadlineComponent title="About"/> */}
-          <TextImageComponent />
+          {/* <TextImageComponent /> */}
+          <div className="about-container">
+            <p className="about-text">I'm Danel <span className="shurda">"Dantrick"</span> Temesghen. A DJ based in Stocktown, Sweden.</p>
+          </div>
+          
       </div>
     )
   }

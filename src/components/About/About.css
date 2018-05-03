@@ -3,5 +3,53 @@
     width: 100%;
    /*  background-color: #B4DBC0; */
    display: flex;
- 
+   background-image: url('../../assets/dannez.jpg');
+   background-size: cover;
+   background-attachment: center;
+   margin: 0 auto;
+}
+
+.shurda {
+    color: #C70039;
+    font-weight: bold;
+}
+
+.about-container {
+    width:55%;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-text {
+    margin-top: 550px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding:1rem;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+    .about {
+        background-position: 27% !important;
+        border-top: initial !important;
+    }
+
+    .about-container {
+        margin: initial;
+        margin-right:50px !important;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        padding:15px;
+        margin-left: 20px;
+        background: initial;
+        color: #000;
+        font-size: 2rem;
+        line-height: 1.7rem;
+    }
+
+    .shurda {
+        font-size: 2rem;
+    }
 }
