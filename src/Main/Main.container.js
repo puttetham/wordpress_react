@@ -8,6 +8,7 @@ import GalleryComponent from '../components/Gallery/Gallery.component';
 import MusicComponent from '../components/Music/Music.component';
 import ContactComponent from '../components/Contact/Contact.component';
 import FooterComponent from '../components/Footer/Footer.component';
+import BannerComponent from '../components/Banner/Banner.component';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -87,6 +88,7 @@ return (
           </ScrollableAnchor>
 
           <div className="flex-container">
+            <BannerComponent />
             <ScrollableAnchor id={'AboutSection'}>
               <AboutComponent />
             </ScrollableAnchor>

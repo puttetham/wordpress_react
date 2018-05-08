@@ -35,3 +35,30 @@
 .widget-cloudcast-image:after {
     display: none !important;
 }
+
+@media only screen and (max-width: 700px) {
+
+    .banner {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .banner-heading {
+      font-size: 1.5rem; 
+      margin-left: 1rem;      
+    }
+
+    .banner-text {
+      margin-left: 1rem;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    .banner-text > span {
+      font-size: 1rem;
+    }
+
+    .banner-text > .banner-shurda {
+      font-size: 0.8rem;
+    }
+  }
