@@ -1,18 +1,35 @@
 .banner {
-    background-color: #161616;
+    background-color: #000;
     width: 100%;
-    /* height: 10vh; */
-    text-align: center;
-    
+    height: 40vh;
+
   }
 
 .banner-heading {
     padding-top: 30px;
     margin: 0;
     display: block;
-    font-size: 1.3rem;
+    font-size: 6rem;
     color: #fff;
-    font-family: LemonMilk, sans-serif;
+    font-family: 'Lemon-Milk', sans-serif;
+    font-weight: 600;
+    margin-left: 150px;
+}
+
+.banner-text {
+    color: #fff;
+    margin-left: 160px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.banner-shurda {
+    font-size: 1rem;
+}
+
+.textfix {
+    font-weight: 800;
 }
 
 .widget-cloudcast-image:after {

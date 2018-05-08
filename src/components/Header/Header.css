@@ -16,7 +16,6 @@
 }
 
 .hero-text {
-  
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -27,9 +26,10 @@
 }
 
 .hero-text h1 {
-  font-size: 3em;
+  font-size: 5em;
   color:#C70039;
   text-decoration: underline;
+
 }
 
 

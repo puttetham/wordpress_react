@@ -9,6 +9,8 @@
     src: url('../assets/fonts/LemonMilk.otf');
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html {
 	font-size: 100%;
 }
