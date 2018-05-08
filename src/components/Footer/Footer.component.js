@@ -14,13 +14,12 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer"> 
-          <p>Official website of DJ Dantrick</p>
           <div className="logo-container">
           <a className="contact-logo" href=""><img src={instagram} alt="" /></a>
           <a className="contact-logo" href=""><img src={facebook} alt="" /></a>
           <a className="contact-logo" href=""><img src={mailto} alt="" /></a>
           </div>
-          
+          <p className="copyright">Official website of DJ Dantrick	&copy;</p>
       </div>
     )
   }

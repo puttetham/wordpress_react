@@ -30,8 +30,15 @@ componentDidMount() {
   }
 render() {
 return (
-    <div className="contact"> 
-      <UpcomingDatesComponent dates={this.state.dates} />
+    <div className="contact">
+      <div className="left-col">
+        <UpcomingDatesComponent dates={this.state.dates} />
+      </div>
+      <div className="right-col">
+        
+        <ContactFormComponent />
+      </div>
+      
       
       {/* <ContactFormComponent /> */}
     </div>

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #fff;
+  background-color: #4c4c4c;
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -17,5 +17,9 @@
   display: inline;
   margin: 0 auto;
   padding: 5px;
+}
+
+.copyright {
+  font-size: 1em;
 }
 

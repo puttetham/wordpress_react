@@ -8,7 +8,6 @@ import GalleryComponent from '../components/Gallery/Gallery.component';
 import MusicComponent from '../components/Music/Music.component';
 import ContactComponent from '../components/Contact/Contact.component';
 import FooterComponent from '../components/Footer/Footer.component';
-import BannerComponent from '../components/Banner/Banner.component';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -86,9 +85,8 @@ return (
           <ScrollableAnchor id={'HeaderSection'}>
             <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen} isMobile={this.state.isMobile}  />
           </ScrollableAnchor>
-          
+
           <div className="flex-container">
-            <BannerComponent />
             <ScrollableAnchor id={'AboutSection'}>
               <AboutComponent />
             </ScrollableAnchor>
@@ -97,9 +95,9 @@ return (
               <GalleryComponent />
             </ScrollableAnchor>
             
-            <ScrollableAnchor id={'MusicSection'}>
+            {/* <ScrollableAnchor id={'MusicSection'}>
              <MusicComponent />
-            </ScrollableAnchor>
+            </ScrollableAnchor> */}
             
             <ScrollableAnchor id={'ContactSection'}>
               <ContactComponent />
