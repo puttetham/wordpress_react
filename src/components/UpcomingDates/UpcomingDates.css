@@ -1,32 +1,39 @@
 .upcoming-dates {
-  border-radius: 10px;
- 
   /* box-shadow: 2px 2px 2px #888888; */
-  padding: 1.5rem;
-  align-self: center;
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
+  color: #FFF;
   width: 300px;
-}
-
-.divider {
-  border-bottom: 2px solid white;
-  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .date-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+
 }
 
 .date-item > p {
-  font-size: 14px;
+  font-size: 2rem;
   margin: 0;  
+  margin-bottom: 0.2rem;
 }
 
+.venue {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #C70039;
+}
 .divider > h2 {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.date-title {
+  font-size: 4rem;
+  
 }
 

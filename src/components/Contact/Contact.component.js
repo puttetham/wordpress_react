@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeadlineComponent from '../Headline/Headline.component';
 import UpcomingDatesComponent from '../UpcomingDates/UpcomingDates.component';
+import ContactFormComponent from '../ContactForm/ContactForm.component';
 import './Contact.css'
 
 interface Props {
@@ -30,8 +31,9 @@ componentDidMount() {
 render() {
 return (
     <div className="contact"> 
-      <HeadlineComponent title="Contact"/>
       <UpcomingDatesComponent dates={this.state.dates} />
+      
+      {/* <ContactFormComponent /> */}
     </div>
     )
   }

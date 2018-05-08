@@ -21,7 +21,7 @@ class Instagram extends React.Component {
     return (
       <div className="instagram" id={instafeedTarget}>
         <Instafeed
-          limit='12'
+          limit='16'
           ref='instafeed'
           resolution='standard_resolution'
           sortBy='most-recent'

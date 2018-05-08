@@ -1,0 +1,13 @@
+.contact-form {
+  display: flex;
+}
+
+.contact-title {
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.email-link {
+  font-size: 2em;
+  color: #000;
+}
