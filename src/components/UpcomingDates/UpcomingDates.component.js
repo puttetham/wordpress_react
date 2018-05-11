@@ -19,7 +19,6 @@ const UpcomingDates = (props: Props) => {
 
   return (
     <div className="upcoming-dates col-start-span-7">
-      
       <div className="date-container">
       <h2 className="date-title">Upcoming Dates</h2>
         {dateRender}

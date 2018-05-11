@@ -9,8 +9,8 @@ interface Props {
 
 const Menu = (props: Props) => (
   <div className="menu" onClick={props.menuClick}> 
-    <div className="line" />
-    <div className="line" />
+    <div className="line open" />
+    <div className="line open" />
   </div>
 );
 

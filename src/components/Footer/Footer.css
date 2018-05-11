@@ -1,6 +1,6 @@
 .footer {
   background-color: #DF4510;
-  height: 20vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,18 +8,18 @@
 }
 
 .logo-container {
-  margin-bottom: 20px;
+  
 }
 
 .contact-logo > img {
-  height:30px;
-  width: 30px;
+  height:40px;
+  width: 40px;
   display: inline;
   margin: 0 auto;
   padding: 5px;
 }
 
 .copyright {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 

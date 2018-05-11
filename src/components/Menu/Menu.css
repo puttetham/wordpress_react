@@ -14,6 +14,10 @@
   border-radius: 5px;
 }
 
+.open {
+  background: #000;
+}
+
 .line::after {
   content: "";
   position: absolute;

@@ -8,16 +8,42 @@ interface Props {
 }
 
 class About extends React.Component {
-  render() {
-    return (
-      <div className="about"> 
-          {/* <TextImageComponent /> */}
-          <div className="about-container">
-            <p className="about-text">I'm Danel <span className="shurda">"Dantrick"</span> Temesghen. A DJ based in Stocktown, Sweden.</p>
-          </div>
-          
+  constructor() {
+    super();
+    this.state = {
+      aboutInfo: [],
+    }
+  }
+
+componentDidMount() {
+    let dataURL = "http://localhost/wordpress/wp-json/wp/v2/about";
+    fetch(dataURL)
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          aboutInfo: res
+    })
+  })
+ }
+
+render() {
+  const aboutInfoRender = this.state.aboutInfo.map((t, i) => (
+    <div key={i} className="about-description">
+      <p className="about-text">{t.acf.about}</p>
+    </div>
+  ));
+
+  console.log(this.state.aboutInfo, 'testing aboutinfo');
+  return (
+    <div className="about"> 
+      {/* <TextImageComponent /> */}
+      <div className="about-container">
+        {/* <p className="about-text">I'm Danel <span className="shurda">"Dantrick"</span> Temesghen. A DJ based in Stocktown, Sweden.</p> */}
+        {aboutInfoRender}
       </div>
+    </div>
     )
   }
 }
+
 export default About;

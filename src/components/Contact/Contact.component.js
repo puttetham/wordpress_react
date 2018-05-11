@@ -8,8 +8,6 @@ import './Contact.css'
 interface Props {
 }
 
-
-
 class Contact extends React.Component {
   constructor() {
     super();
@@ -17,32 +15,29 @@ class Contact extends React.Component {
       dates: [],
     }
   }
+
 componentDidMount() {
-    let dataURL = "http://localhost/wordpress/wp-json/wp/v2/dates";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          dates: res
-        })
-        //console.log(this.state.dates);
+  let dataURL = "http://localhost/wordpress/wp-json/wp/v2/dates";
+  fetch(dataURL)
+    .then(res => res.json())
+    .then(res => {
+      this.setState({
+        dates: res
       })
+    })
   }
+
 render() {
-return (
-    <div className="contact">
-      <div className="left-col">
-        <UpcomingDatesComponent dates={this.state.dates} />
+  return (
+      <div className="contact">
+        <div className="left-col">
+          <UpcomingDatesComponent dates={this.state.dates} />
+        </div>
+        <div className="right-col">
+          <ContactFormComponent />
+        </div>
       </div>
-      <div className="right-col">
-        
-        <ContactFormComponent />
-      </div>
-      
-      
-      {/* <ContactFormComponent /> */}
-    </div>
-    )
-  }
+      )
+    }
 }
 export default Contact;
