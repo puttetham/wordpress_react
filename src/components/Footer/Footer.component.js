@@ -19,7 +19,7 @@ class Footer extends React.Component {
           <a className="contact-logo" href=""><img src={facebook} alt="" /></a>
           <a className="contact-logo" href=""><img src={mailto} alt="" /></a>
           </div>
-          <p className="copyright">Official website of DJ Dantrick	&copy;</p>
+          <p className="copyright">Official website of <p className="djfoot">Dantrick</p>	&copy;</p>
       </div>
     )
   }

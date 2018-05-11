@@ -1,5 +1,5 @@
 .footer {
-  background-color: #DF4510;
+  background-color: #eee;
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -8,12 +8,12 @@
 }
 
 .logo-container {
-  
+  margin-top: 50px;
 }
 
 .contact-logo > img {
-  height:40px;
-  width: 40px;
+  height:30px;
+  width: 30px;
   display: inline;
   margin: 0 auto;
   padding: 5px;
@@ -23,3 +23,9 @@
   font-size: 1.2em;
 }
 
+.djfoot {
+  border-bottom: 2px solid #C70039;
+  display: inline-block;
+  font-size: 0.9em;
+  font-family: 'LemonMilk', sans-serif;
+}

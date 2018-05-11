@@ -1,17 +1,16 @@
 .banner {
-    background-color: #000;
+    background-color: #181818;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
 .banner-heading {
-    
     margin: 0;
     display: block;
     font-size: 6rem;
-    color: #fff;
-    font-family: 'Lemon-Milk', sans-serif;
+    color: #C70039;
+    font-family: 'LemonMilk', sans-serif;
     font-weight: 600;
     margin-left: 150px;
 }
@@ -19,7 +18,7 @@
 .banner-text {
     color: #fff;
     margin-left: 160px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'LemonMilk', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
