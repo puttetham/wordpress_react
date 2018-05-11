@@ -16,7 +16,7 @@
 }
 
 .banner-text {
-    color: #fff;
+    color: #eee;
     margin-left: 160px;
     font-family: 'LemonMilk', sans-serif;
     font-weight: 400;
@@ -25,6 +25,7 @@
 
 .banner-shurda {
     font-size: 1rem;
+    font-style: italic;
 }
 
 .textfix {

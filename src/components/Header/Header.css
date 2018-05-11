@@ -25,7 +25,8 @@
 .hero-text h1 {
   font-size: 5em;
   color:#C70039;
-  text-decoration: underline;
+  border: 5px solid #C70039;
+  padding: 15px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -33,7 +34,7 @@
 @media only screen and (max-width: 700px) {
   .hero-text h1 {
     font-size: 2rem;
-    
+    padding: 5px;
   }
 }
 

@@ -15,7 +15,7 @@ class Footer extends React.Component {
     return (
       <div className="footer"> 
           <div className="logo-container">
-          <a className="contact-logo" href=""><img src={instagram} alt="" /></a>
+          <a className="contact-logo" href="https://www.instagram.com/dantricked/"><img src={instagram} alt="" /></a>
           <a className="contact-logo" href=""><img src={facebook} alt="" /></a>
           <a className="contact-logo" href=""><img src={mailto} alt="" /></a>
           </div>
