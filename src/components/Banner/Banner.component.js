@@ -10,7 +10,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="banner"> 
-          <h1 className="banner-heading">DANEL TEMESGHEN</h1>
+          <h1 className="banner-heading">DANEL<br /> TEMESGHEN</h1>
           <p className="banner-text">THOSE WHO DO <span className="textfix">NOT WANT TO <br  />
              IMITATE</span> ANYTHING, <br  />
              PRODUCE NOTHING. <br  />
