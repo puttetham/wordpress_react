@@ -4,10 +4,8 @@
    /*  background-color: #B4DBC0; */
    display: flex;
    background-image: url('../../assets/dannez.jpg');
-   background-size: cover;
-   background-attachment: center;
+   /* background-attachment: center; */
    margin: 0 auto;
-   /* background-attachment: fixed; */
 }
 
 .shurda {
@@ -16,46 +14,52 @@
 }
 
 .about-container {
-    max-width: 41%;
-    padding:1rem;
     height: auto;
 }
 
 .about-description {
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 8px; 
+  /* background: rgba(0, 0, 0, 0.75); */
+  max-width: 45%;
+  margin-left: 8.5rem;
+  margin-top: 9rem; 
 }
 
 .about-text {
-    padding: 1rem;
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    color: #181818;
+    font-family: 'LemonMilk', sans-serif;
 }
 
 @media only screen and (max-width: 700px) {
     .about {
-        background-position: 27% !important;
+        background-size: cover;
+        background-position: 23% !important;
         border-top: initial !important;
     }
 
     .about-container {
-        width: 50%;    
+        max-width: 80%;    
     }
 
     .about-description {
       background: initial;
+      margin-left: 0;
+      margin-top: 1rem;
+      max-width: initial;
     }
 
     .about-text {
         padding:1rem;
-        padding-left: 0;
         margin: 0;
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.7rem;
+        font-family: 'Raleway', sans-serif;
     }
 
     .shurda {
         font-size: 2rem;
     }
 }
+

@@ -22,10 +22,6 @@ const Overlay = (props: Props) => {
       title: 'GALLERY',
     },
     {
-      href: '#MusicSection',
-      title: 'MUSIC',
-    },
-    {
       href: '#ContactSection',
       title: 'CONTACT',
     },

@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   z-index:11;
-  position: absolute;
+  position: fixed;
   background: rgba(0, 0, 0, 0.85);
   transform: translateY(-100%);
   transition: transform .4s;

@@ -16,7 +16,7 @@ class About extends React.Component {
   }
 
 componentDidMount() {
-    let dataURL = "http://localhost/wordpress/wp-json/wp/v2/about";
+    let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/about";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -36,9 +36,7 @@ render() {
   console.log(this.state.aboutInfo, 'testing aboutinfo');
   return (
     <div className="about"> 
-      {/* <TextImageComponent /> */}
       <div className="about-container">
-        {/* <p className="about-text">I'm Danel <span className="shurda">"Dantrick"</span> Temesghen. A DJ based in Stocktown, Sweden.</p> */}
         {aboutInfoRender}
       </div>
     </div>

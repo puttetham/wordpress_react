@@ -15,9 +15,9 @@ class Footer extends React.Component {
     return (
       <div className="footer"> 
           <div className="logo-container">
-          <a className="contact-logo" href="https://www.instagram.com/dantricked/"><img src={instagram} alt="" /></a>
+          <a className="contact-logo" href="https://www.instagram.com/dantricked/" target="_blank"><img src={instagram} alt="" /></a>
           <a className="contact-logo" href=""><img src={facebook} alt="" /></a>
-          <a className="contact-logo" href=""><img src={mailto} alt="" /></a>
+          <a className="contact-logo" href="mailto:djdantrick@gmail.com"><img src={mailto} alt="" /></a>
           </div>
           <p className="copyright">Official website of <p className="djfoot">Dantrick</p>	&copy;</p>
       </div>
