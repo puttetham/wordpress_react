@@ -45,6 +45,7 @@ componentDidMount() {
       })
       this.onResize();
       window.addEventListener('resize', this.onResize);
+      configureAnchors({offset: 2, scrollDuration: 400})
   }
 
   componentWillUnmount() {
