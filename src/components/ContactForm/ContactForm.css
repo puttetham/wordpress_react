@@ -19,11 +19,19 @@
   margin-left: 2rem;
 }
 
+/* @media only screen and (min-width: 1440px) {
+  .contact-form {
+    align-items: center;
+    padding: 3rem;
+    padding-left: 0;
+  }
+  
+} */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .contact-form {
     padding: 0rem;
-    margin-left: 2rem;
+    align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -36,5 +44,11 @@
   .email-link {
     font-size: 1.5em;
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-form {
+   padding-left: 0;
   }
 }

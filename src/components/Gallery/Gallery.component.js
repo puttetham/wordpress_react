@@ -15,18 +15,16 @@ interface Props {
 class Gallery extends React.Component {
   render() {
     return (
-      <div className="flippos">
+      <div className="flip-wrapper">
         <div id='container2'>
-        Make 
+        <p className="flip-text">Follow me at</p> 
         <div id='flip'>
-          <div><div>WORK</div></div>
-          <div><div>LIFE</div></div>
-          <div><div>Everything</div></div>
+          <div><div>@dantricked</div></div>
+          <div><div>Instagram</div></div>
         </div>
-        AweSoMe!
+        {/* <p className="flip-text">AweSoMe!</p> */}
       </div>
       <div className="gallery">
-       
          <InstagramComponent />
       </div>
       </div>

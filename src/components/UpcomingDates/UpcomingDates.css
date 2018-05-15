@@ -38,18 +38,36 @@
   margin-left: 8.5rem;
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (min-width: 1440px) {
   
+  .upcoming-dates {
+    align-items: center;
+ 
+  }
+
+  .date-title {
+    margin-left: 0;
+  }
+
+  .date-item > p {
+    margin-left: 0;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
   
+  .upcoming-dates {
+    align-items: center;
+  }
   
   .date-title {
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
 
   .date-item > p {
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
     
   }
   

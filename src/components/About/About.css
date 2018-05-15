@@ -31,38 +31,49 @@
     font-family: 'Special Elite', cursive;
     background-color: #eee;
     padding: 1.5rem;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-    .about {
-        background-size: cover;
-        background-position: 23% !important;
-        border-top: initial !important;
-    }
+@media only screen and (min-width: 1440px) {
+  .about {
+    background-size: cover;
+    background-attachment: center;
+  }
 
-    .about-container {
-        max-width: 80%;    
-    }
+  .about-description {
+    max-width: 32%; 
+  }
+}
 
-    .about-description {
-      background: initial;
-      margin-left: 0;
-      margin-top: 1rem;
-      max-width: initial;
-    }
+@media only screen and (max-width: 768px) {
+  .about {
+    background-size: cover;
+    background-position: 23% !important;
+    border-top: initial !important;
+  }
 
-    .about-text {
-        padding:1rem;
-        margin: 0;
-        color: #000;
-        font-size: 1rem;
-        line-height: 1.7rem;
-        background-color: initial !important;
-    }
+  .about-container {
+    max-width: 80%;    
+  }
 
-    .shurda {
-        font-size: 2rem;
-    }
+  .about-description {
+    background: initial;
+    margin-left: 0;
+    margin-top: 1rem;
+    max-width: initial;
+  }
+
+  .about-text {
+    padding:1rem;
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    background-color: initial !important;
+  }
+
+  .shurda {
+    font-size: 2rem;
+  }
 }
 
