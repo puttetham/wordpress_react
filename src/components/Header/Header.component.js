@@ -61,9 +61,9 @@ return (
     }
     <div className="hero">
       <VideoComponent src={IntroVid} />
-      {/* <div className="hero-text">
+      <div className="hero-text">
         <h1 className="header-Text">DANTRICK</h1>
-      </div> */}
+      </div>
     </div>
   </div>
     )
