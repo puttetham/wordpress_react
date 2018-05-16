@@ -16,7 +16,7 @@ class About extends React.Component {
   }
 
 componentDidMount() {
-    let dataURL = "http://localhost/wordpress/wp-json/wp/v2/about";
+    let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/about";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
@@ -31,6 +31,9 @@ render() {
     <div key={i} className="about-description">
       <p className="about-text">{t.acf.about}</p>
     </div>
+    
+    
+    
   ));
 
   console.log(this.state.aboutInfo, 'testing aboutinfo');
