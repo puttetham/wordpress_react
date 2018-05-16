@@ -29,10 +29,12 @@
     color: #181818;
     line-height: 30px;
     font-family: 'Special Elite', cursive;
-    background-color: #eee;
-    padding: 1.5rem;
+    /* background-color: #eee; */
+    /* padding: 1.5rem; */
     border-radius: 10px;
 }
+
+/* DESKTOP */
 
 @media only screen and (min-width: 1440px) {
   .about {
@@ -45,6 +47,7 @@
   }
 }
 
+/* PHONE AND TABLET */
 @media only screen and (max-width: 768px) {
   .about {
     background-size: cover;
@@ -64,7 +67,7 @@
   }
 
   .about-text {
-    padding:1rem;
+    
     margin: 0;
     color: #000;
     font-size: 1rem;
@@ -74,6 +77,18 @@
 
   .shurda {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    max-width: 65%;    
+  }
+
+  .about-description {
+    max-width: 65%;
+    margin-left: 2rem;
+    margin-top: 4rem;
   }
 }
 

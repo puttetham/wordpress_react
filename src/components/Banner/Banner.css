@@ -62,3 +62,19 @@
       font-size: 0.8rem;
     }
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner { 
+    }
+
+    .banner-heading {
+      font-size: 3rem;
+      margin-left: 2rem;
+    }
+
+    .banner-text {
+   
+      margin-left: 2rem;
+   
+  }
+  }
