@@ -3,6 +3,7 @@
     width: 100%;
    /*  background-color: #B4DBC0; */
    display: flex;
+   flex-direction: column;
    background-image: url('../../assets/dannez.jpg');
    /* background-attachment: center; */
    margin: 0 auto;

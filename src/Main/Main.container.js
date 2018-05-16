@@ -9,6 +9,7 @@ import MusicComponent from '../components/Music/Music.component';
 import ContactComponent from '../components/Contact/Contact.component';
 import FooterComponent from '../components/Footer/Footer.component';
 import BannerComponent from '../components/Banner/Banner.component';
+import MixcloudComponent from '../components/Mixcloud/Mixcloud.component';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -80,6 +81,7 @@ return (
             <ScrollableAnchor id={'AboutSection'}>
               <AboutComponent />
             </ScrollableAnchor>
+            <MixcloudComponent />
             <ScrollableAnchor id={'GallerySection'}>
               <GalleryComponent />
             </ScrollableAnchor>
