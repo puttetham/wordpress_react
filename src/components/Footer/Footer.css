@@ -1,10 +1,11 @@
 .footer {
   background-color: #eee;
-  height: 30vh;
+  /* height: 30vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 
 .logo-container {
@@ -21,7 +22,7 @@
 
 .copyright {
   font-size: 1.1em;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat','Raleway', sans-serif;
   margin-bottom: 0;
 }
 
@@ -33,7 +34,7 @@
   border-bottom: 2px solid #C70039;
   display: inline-block;
   font-size: 0.9em;
-  font-family: 'LemonMilk', sans-serif;
+  font-family: headingText, 'Raleway', sans-serif;
 }
 
 @media only screen and (max-width: 700px) {

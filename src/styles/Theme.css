@@ -5,7 +5,7 @@
 @custom-media --large (width > 1440px); */
 
 @font-face {
-    font-family: test;
+    font-family: headingText;
     src: url('../assets/fonts/LemonMilk.otf');
 }
 

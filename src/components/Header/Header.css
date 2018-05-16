@@ -1,6 +1,7 @@
 .header {
   height: 100vh;
   width: 100%;
+  overflow-x:hidden;
 }
 
 .hero {
@@ -22,13 +23,14 @@
   align-items: center;
 }
 
-.hero-text h1 {
+.hero-text > h1 {
   font-size: 5em;
   color:#C70039;
   border: 5px solid #C70039;
   padding: 15px;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: headingText, 'Raleway', sans-serif;
 }
 
 @media only screen and (max-width: 700px) {

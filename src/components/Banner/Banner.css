@@ -10,7 +10,7 @@
     display: block;
     font-size: 6rem;
     color: #C70039;
-    font-family: 'LemonMilk', sans-serif;
+    font-family: headingText, 'Raleway', sans-serif;
     font-weight: 600;
     margin-left: 8.5rem;
 }
@@ -18,7 +18,7 @@
 .banner-text {
     color: #eee;
     margin-left: 8.5rem;
-    font-family: 'LemonMilk', sans-serif;
+    font-family: headingText, 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
