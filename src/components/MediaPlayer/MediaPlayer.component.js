@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Audio from 'react-audioplayer';
-import ShareComponent from '../Share/Share.component';
+
 import UpcomingDates from '../UpcomingDates/UpcomingDates.component';
 import SoundcloudComponent from '../Soundcloud/Soundcloud.component';
 
@@ -51,7 +51,7 @@ return (
       <SoundcloudComponent />
       <div className="aside">
       <UpcomingDates />
-      <ShareComponent />
+      
       </div>
     </div>
     )

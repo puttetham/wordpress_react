@@ -18,7 +18,7 @@
 }
 
 .about-description {
-  /* background: rgba(0, 0, 0, 0.75); */
+  
   max-width: 45%;
   margin-left: 8.5rem;
   margin-top: 9rem; 
@@ -99,8 +99,6 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .about-description {
-    
     margin-left: 4rem;
-   
   }
 }
