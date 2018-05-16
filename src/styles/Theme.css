@@ -27,7 +27,7 @@ html {
 body{
 	margin: 0;
 	overflow-x: hidden;	
-	font-family: test;
+	font-family: headingText,'Raleway', sans-serif;
 }
 
 .no-scroll {

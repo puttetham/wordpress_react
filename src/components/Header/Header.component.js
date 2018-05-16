@@ -62,7 +62,7 @@ return (
     <div className="hero">
       <VideoComponent src={IntroVid} />
       <div className="hero-text">
-        <h1>DANTRICK</h1>
+        <h1 className="header-Text">DANTRICK</h1>
       </div>
     </div>
   </div>
