@@ -15,28 +15,32 @@
   align-items: center;
 }
 
-.hero-text {
+/* .hero-text {
   position: absolute;
   display: flex;
   max-width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 .header-Text {
-  font-size: 5em;
+  font-size: 2rem;
   color:#C70039;
   border: 5px solid #C70039;
-  padding: 15px;
+  padding: 4px;
   font-family: headingText, 'Raleway', sans-serif; 
-  margin: 0 auto;
+  margin: 12px 30px;
+  position:absolute;
+  left:0;
+  top:0;
+  
 }
 
-@media only screen and (max-width: 700px) {
-  .hero-text h1 {
-    font-size: 2rem;
-    padding: 5px;
+@media only screen and (max-width: 850px) {
+  .header-Text {
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
   }
 }
 
