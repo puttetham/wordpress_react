@@ -11,7 +11,9 @@ interface Props {
 }
 
 class Footer extends React.Component {
+  
   render() {
+    
     return (
       <div className="footer"> 
           <div className="logo-container">
@@ -19,7 +21,9 @@ class Footer extends React.Component {
           <a className="contact-logo" href=""><img src={facebook} alt="" /></a>
           <a className="contact-logo" href="mailto:djdantrick@gmail.com"><img src={mailto} alt="" /></a>
           </div>
-          <p className="copyright">Official website of <p className="djfoot">Dantrick</p>	&copy;</p>
+          <p className="copyright">Official website of <p className="djfoot">Dantrick</p></p>
+          <p className="copyright disclaimer">Copyright &copy; {(new Date().getFullYear())}</p>
+        
       </div>
     )
   }

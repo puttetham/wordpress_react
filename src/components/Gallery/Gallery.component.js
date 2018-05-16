@@ -23,7 +23,6 @@ class Gallery extends React.Component {
           <div><div>@dantricked</div></div>
           <div><div>Instagram</div></div>
         </div>
-        {/* <p className="flip-text">AweSoMe!</p> */}
       </div>
       <div className="gallery">
          <InstagramComponent />
@@ -33,8 +32,3 @@ class Gallery extends React.Component {
   }
 }
 export default Gallery;
-
-
-// userId='302005911'
-// accessToken='302005911.1677ed0.6d2ed4dfcf6d429993689f328aa0da68'
-

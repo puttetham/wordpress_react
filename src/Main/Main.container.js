@@ -30,8 +30,6 @@ class Main extends Component {
       isMobile: false,
     }
   }
-
-  //nya http://localhost/wordpress/wp-json
   
 componentDidMount() {
     let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
@@ -69,7 +67,7 @@ componentDidMount() {
   }
 
 render() {
-  
+
 return (
       <div className="main">
         <div className="content-container">
@@ -82,15 +80,9 @@ return (
             <ScrollableAnchor id={'AboutSection'}>
               <AboutComponent />
             </ScrollableAnchor>
-           
             <ScrollableAnchor id={'GallerySection'}>
               <GalleryComponent />
             </ScrollableAnchor>
-            
-            {/* <ScrollableAnchor id={'MusicSection'}>
-             <MusicComponent />
-            </ScrollableAnchor> */}
-            
             <ScrollableAnchor id={'ContactSection'}>
               <ContactComponent />
             </ScrollableAnchor>
