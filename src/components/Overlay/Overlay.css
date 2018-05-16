@@ -37,7 +37,7 @@
 .mobile-item {
   color: #FFF;
   font-size: 2em;
-  font-family: test;
+  font-family: headingText,'Raleway', sans-serif;
 }
 
 a > h2 {

@@ -55,7 +55,7 @@
 }
 
 /* PHONE AND TABLET */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 846px) {
   .about {
     background-size: cover;
     background-position: 23% !important;
@@ -79,6 +79,7 @@
     font-size: 1rem;
     line-height: 1.7rem;
     background-color: initial !important;
+    padding-left: 1rem;
   }
 
   .shurda {
