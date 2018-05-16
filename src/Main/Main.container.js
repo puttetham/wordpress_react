@@ -37,7 +37,6 @@ componentDidMount() {
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
-        console.log(res, 'response');
         this.setState({
           images: res
         })
@@ -75,7 +74,6 @@ return (
           <ScrollableAnchor id={'HeaderSection'}>
             <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen} isMobile={this.state.isMobile}  />
           </ScrollableAnchor>
-
           <div className="flex-container">
             <BannerComponent />
             <ScrollableAnchor id={'AboutSection'}>

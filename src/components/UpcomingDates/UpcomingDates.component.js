@@ -6,9 +6,7 @@ interface Props {
   dates: Array,
 }
 
-const UpcomingDates = (props: Props) => {  
-  console.log(props.dates, 'check date props');
-  
+const UpcomingDates = (props: Props) => {    
   const dateRender = props.dates.map((t, i) => (
     <div key={i} className="date-item">
       <p className="venue">{t.acf.venue}</p>

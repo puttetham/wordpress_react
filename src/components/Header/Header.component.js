@@ -52,15 +52,6 @@ render() {
     backgroundImage: this.props.images ?  `url(${this.props.images.acf.image})` : null,
     backgroundSize: 'cover',
   }
-
-  // const altStyle = {
-  //   backgroundImage: `url(${this.props.heroImage})`,
-  //   backgroundRepeat: 'no-repeat',
-  //   backgroundAttachment: 'fixed',
-  //   backgroundPosition: 'center',
-  //   backgroundSize: '500px auto'
-  // }
-  console.log('hello');
   
 return (
   <div className="header"> 
