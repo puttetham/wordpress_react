@@ -36,7 +36,7 @@
 
 /* DESKTOP */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1600px) {
   .about {
     background-size: cover;
     background-attachment: center;
@@ -44,6 +44,12 @@
 
   .about-description {
     max-width: 32%; 
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about-text {
+    padding: 1rem;
   }
 }
 
