@@ -78,3 +78,19 @@
    
   }
   }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .banner { 
+    }
+
+    .banner-heading {
+      font-size: 3rem;
+      margin-left: 4rem;
+    }
+
+    .banner-text {
+   
+      margin-left: 4rem;
+   
+  }
+  }

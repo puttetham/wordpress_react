@@ -1,7 +1,6 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  
   padding: 3rem;
 }
 
@@ -10,13 +9,15 @@
   margin-bottom: 1rem;
   margin-left: 2rem;
   color: #FFF;
-  font-size: 2em;
+  font-size: 2rem;
+  font-family: 'Special Elite', serif;
 }
 
 .email-link {
-  font-size: 2em;
+  font-size: 2rem;
   color: #C70039;
   margin-left: 2rem;
+  font-family: 'Special Elite', serif;
 }
 
 /* @media only screen and (min-width: 1440px) {
@@ -28,7 +29,7 @@
   
 } */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .contact-form {
     padding: 0rem;
     align-items: center;
@@ -37,12 +38,12 @@
   }
   
   .contact-title {
-   font-size: 1.5em;
+   font-size: 1rem;
    margin-left: 0;
   }
   
   .email-link {
-    font-size: 1.5em;
+    font-size: 1rem;
     margin-left: 0;
   }
 }
@@ -50,5 +51,21 @@
 @media only screen and (max-width: 1024px) {
   .contact-form {
    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .contact-form {
+    padding: 0; 
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .email-link {
+    font-size: 1.5rem;
+    
   }
 }

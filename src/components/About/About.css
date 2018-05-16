@@ -34,7 +34,7 @@
     border-radius: 10px;
 }
 
-/* DESKTOP */
+/* DESKTOP AND BIG LAPTOP */
 
 @media only screen and (min-width: 1600px) {
   .about {
@@ -73,7 +73,6 @@
   }
 
   .about-text {
-    
     margin: 0;
     color: #000;
     font-size: 1rem;
@@ -98,3 +97,10 @@
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .about-description {
+    
+    margin-left: 4rem;
+   
+  }
+}
