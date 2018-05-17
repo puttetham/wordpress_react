@@ -33,7 +33,7 @@ render() {
     </div>    
   ));
 
-  console.log(this.state.aboutInfo, 'testing aboutinfo');
+  
   return (
     <div className="about"> 
       <div className="about-container">
