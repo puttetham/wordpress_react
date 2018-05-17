@@ -33,14 +33,6 @@ class Main extends Component {
   }
   
 componentDidMount() {
-    let dataURL = "http://localhost:8888/wordpress_react/wp-json/wp/v2/images?_embed/";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          images: res
-        })
-      })
       this.onResize();
       window.addEventListener('resize', this.onResize);
       configureAnchors({offset: 2, scrollDuration: 400})
