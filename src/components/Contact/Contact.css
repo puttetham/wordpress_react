@@ -23,8 +23,12 @@
   
   .contact {
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .date-title {
+    margin-top: 0;
   }
 
   .left-col{
@@ -40,8 +44,28 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .date-title {
+    margin-top: 0;
+  }
+
+  .left-col{
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
