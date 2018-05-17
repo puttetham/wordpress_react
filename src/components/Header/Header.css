@@ -32,8 +32,8 @@
   font-family: headingText, 'Raleway', sans-serif; 
   margin: 0;
   position:absolute;
-  left:2rem;
-  top:2rem;
+  left:1rem;
+  top:1rem;
 }
 
 @media only screen and (max-width: 850px) {
