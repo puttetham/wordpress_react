@@ -30,10 +30,10 @@
   border: 5px solid #C70039;
   padding: 4px;
   font-family: headingText, 'Raleway', sans-serif; 
-  margin: 12px 30px;
+  margin: 0;
   position:absolute;
-  left:0;
-  top:0;
+  left:2rem;
+  top:2rem;
   
 }
 

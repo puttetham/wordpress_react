@@ -74,6 +74,10 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .upcoming-dates {
+    align-items: center;
+  }
+  
   .date-item > p {
     margin-left: 2rem;
   }

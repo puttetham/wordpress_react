@@ -19,7 +19,7 @@
   
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 768px) {
   
   .contact {
     flex-direction: column;
@@ -43,3 +43,18 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   
 }
+
+@media only screen and (min-width: 1280px) {
+  .contact {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+

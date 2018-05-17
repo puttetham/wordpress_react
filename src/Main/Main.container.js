@@ -71,19 +71,19 @@ render() {
 return (
       <div className="main">
         <div className="content-container">
-          <ScrollableAnchor id={'HeaderSection'}>
+          <ScrollableAnchor id={'start'}>
             <HeaderComponent heroImage={heroImage} images={this.state.images[0]} overlayOpen={this.state.overlayOpen} isMobile={this.state.isMobile}  />
           </ScrollableAnchor>
           <div className="flex-container">
             <BannerComponent />
-            <ScrollableAnchor id={'AboutSection'}>
+            <ScrollableAnchor id={'about'}>
               <AboutComponent />
             </ScrollableAnchor>
             <MixcloudComponent />
-            <ScrollableAnchor id={'GallerySection'}>
+            <ScrollableAnchor id={'gallery'}>
               <GalleryComponent />
             </ScrollableAnchor>
-            <ScrollableAnchor id={'ContactSection'}>
+            <ScrollableAnchor id={'contact'}>
               <ContactComponent />
             </ScrollableAnchor>
             <FooterComponent />

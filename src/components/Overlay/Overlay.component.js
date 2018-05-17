@@ -10,19 +10,19 @@ interface Props {
 const Overlay = (props: Props) => {
   const linkItems = [
     {
-      href: '#HeaderSection',
+      href: '#start',
       title: 'START',
     },
     {
-      href: '#AboutSection',
+      href: '#about',
       title: 'ABOUT',
     },
     {
-      href: '#GallerySection',
+      href: '#gallery',
       title: 'GALLERY',
     },
     {
-      href: '#ContactSection',
+      href: '#contact',
       title: 'CONTACT',
     },
   ];
