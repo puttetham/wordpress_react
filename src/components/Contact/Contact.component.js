@@ -17,7 +17,7 @@ class Contact extends React.Component {
   }
 
 componentDidMount() {
-  let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/dates";
+  let dataURL = "http://dantrick.se/wp-json/wp/v2/dates";
   fetch(dataURL)
     .then(res => res.json())
     .then(res => {

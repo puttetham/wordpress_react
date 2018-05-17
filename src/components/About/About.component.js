@@ -16,7 +16,7 @@ class About extends React.Component {
   }
 
 componentDidMount() {
-    let dataURL = "http://localhost:8888/wordpress/wp-json/wp/v2/about";
+    let dataURL = "http://dantrick.se/wp-json/wp/v2/about";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
