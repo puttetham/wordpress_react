@@ -3,7 +3,7 @@ import React from 'react';
 import HeadlineComponent from '../Headline/Headline.component';
 import instagram from '../../assets/insta.svg';
 import facebook from '../../assets/facebook.svg';
-import mailto from '../../assets/mailto.svg';
+import mailto from '../../assets/mailto.png';
 import soundcloud from '../../assets/soundcloud.svg';
 import './Footer.css'
 
@@ -21,7 +21,6 @@ class Footer extends React.Component {
           <a className="contact-logo" href="https://soundcloud.com/danel-temesghen" target="_blank"><img src={soundcloud} alt="" /></a>
           <a className="contact-logo" href="https://www.instagram.com/dantricked/" target="_blank"><img src={instagram} alt="" /></a>
           <a className="contact-logo" href="https://www.facebook.com/danel.temesghen" target="_blank"><img src={facebook} alt="" /></a>
-          <a className="contact-logo" href="mailto:djdantrick@gmail.com"><img src={mailto} alt="" /></a>
           </div>
           <p className="copyright">Official website of <p className="djfoot">Dantrick</p></p>
           <p className="copyright disclaimer">Copyright &copy; {(new Date().getFullYear())}</p>
